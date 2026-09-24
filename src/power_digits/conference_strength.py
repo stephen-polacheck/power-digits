@@ -1,11 +1,12 @@
 import json
+import sys
 from pathlib import Path
 
 import polars as pl
 
 
-SEASON = 2026
-CONFERENCE_STRENGTH_START_SEASON = 2023
+SEASON = int(sys.argv[1]) if len(sys.argv) > 1 else 2026
+CONFERENCE_STRENGTH_START_SEASON = SEASON - 3
 
 REGULAR_SEASON_WEIGHT = 1.00
 BOWL_WEIGHT = 0.25
@@ -32,17 +33,26 @@ def load_configuration(project_root: Path) -> dict:
 
 
 def load_games(project_root: Path) -> pl.DataFrame:
+    games_dir = project_root / "data" / "processed" / "games"
+
     game_files = [
-        project_root
-        / "data"
-        / "processed"
-        / "games"
-        / f"games_{season}.parquet"
+        games_dir / f"games_{season}.parquet"
         for season in range(
             CONFERENCE_STRENGTH_START_SEASON,
             SEASON + 1,
         )
+        if (games_dir / f"games_{season}.parquet").exists()
     ]
+
+    if not game_files:
+        raise FileNotFoundError(
+            f"No processed game files found for conference strength through {SEASON}."
+        )
+
+    print(
+        "Conference strength seasons:",
+        ", ".join(path.stem.replace("games_", "") for path in game_files),
+    )
 
     games = pl.concat(
         [pl.read_parquet(path) for path in game_files],

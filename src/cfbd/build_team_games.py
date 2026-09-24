@@ -6,12 +6,11 @@ import polars as pl
 # Determine repository root
 project_root = Path(__file__).resolve().parents[2]
 
-input_path = (
+games_dir = (
     project_root
     / "data"
     / "processed"
     / "games"
-    / "games.parquet"
 )
 
 output_path = (
@@ -23,8 +22,25 @@ output_path = (
 )
 
 
+# Load all available season game files
+game_files = sorted(games_dir.glob("games_*.parquet"))
+
+if not game_files:
+    raise FileNotFoundError(
+        f"No season game files found in: {games_dir}"
+    )
+
+print(
+    "Building team games from seasons:",
+    ", ".join(path.stem.replace("games_", "") for path in game_files),
+)
+
+
 # Load canonical game data
-games = pl.read_parquet(input_path)
+games = pl.concat(
+    [pl.read_parquet(path) for path in game_files],
+    how="vertical",
+)
 
 
 # Create home-team perspective

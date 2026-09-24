@@ -1,11 +1,12 @@
 import json
+import sys
 from pathlib import Path
 
 import polars as pl
 
 
 # Season to build
-SEASON = 2026
+SEASON = int(sys.argv[1]) if len(sys.argv) > 1 else 2026
 
 
 # Determine repository root
