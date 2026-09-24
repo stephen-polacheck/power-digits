@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import polars as pl
@@ -18,6 +19,13 @@ input_path = (
     / "team_games.parquet"
 )
 
+config_path = (
+    project_root
+    / "data"
+    / "config"
+    / "team_seasons.json"
+)
+
 output_path = (
     project_root
     / "data"
@@ -31,7 +39,7 @@ output_path = (
 team_games = pl.read_parquet(input_path)
 
 
-# Build team-season records from actual game data
+# Build base team-season records from CFBD game data
 team_seasons = (
     team_games
     .filter(pl.col("season") == SEASON)
@@ -45,13 +53,37 @@ team_seasons = (
         ]
     )
     .unique()
-    .sort(
-        [
-            "classification",
-            "conference",
-            "team",
-        ]
+)
+
+
+# Load Power Digits configuration
+with config_path.open("r", encoding="utf-8") as file:
+    config = json.load(file)
+
+
+# Apply Power Digits conference overrides
+for override in config.get("conference_overrides", []):
+    if override["season"] != SEASON:
+        continue
+
+    team_id = override["team_id"]
+    conference = override["conference"]
+
+    team_seasons = team_seasons.with_columns(
+        pl.when(pl.col("team_id") == team_id)
+        .then(pl.lit(conference))
+        .otherwise(pl.col("conference"))
+        .alias("conference")
     )
+
+
+# Sort for easier inspection
+team_seasons = team_seasons.sort(
+    [
+        "classification",
+        "conference",
+        "team",
+    ]
 )
 
 
@@ -59,7 +91,7 @@ team_seasons = (
 output_path.parent.mkdir(parents=True, exist_ok=True)
 
 
-# Save team-season data
+# Save final team-season data
 team_seasons.write_parquet(output_path)
 
 

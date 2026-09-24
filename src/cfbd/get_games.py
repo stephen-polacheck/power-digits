@@ -1,12 +1,11 @@
 import json
 import os
+import sys
 from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
 
-
-# Load environment variables from .env
 load_dotenv()
 
 API_KEY = os.getenv("CFBD_API_KEY")
@@ -17,12 +16,10 @@ if not API_KEY:
         "Make sure it is set in your .env file."
     )
 
-
-# CFBD API configuration
 BASE_URL = "https://api.collegefootballdata.com"
 ENDPOINT = "/games"
 
-SEASON = 2026
+SEASON = int(sys.argv[1]) if len(sys.argv) > 1 else 2026
 
 headers = {
     "Authorization": f"Bearer {API_KEY}"

@@ -48,6 +48,10 @@ schools_processed = df.select(
         pl.col("alternateColor").alias("alternate_color"),
         pl.col("logos"),
         pl.col("twitter"),
+
+        pl.col("location")
+        .struct.field("id")
+        .alias("location_venue_id"),
     ]
 )
 

@@ -1,0 +1,35 @@
+{
+  "conference_overrides": [
+    {
+      "season": 2026,
+      "team_id": 41,
+      "conference": "American Athletic"
+    },
+    {
+      "season": 2026,
+      "team_id": 113,
+      "conference": "Mid-American"
+    },
+    {
+      "season": 2026,
+      "team_id": 87,
+      "conference": "ACC"
+    }
+  ],
+  "conference_groups": {
+    "P4": [
+      "ACC",
+      "Big Ten",
+      "Big 12",
+      "SEC"
+    ],
+    "G5": [
+      "American Athletic",
+      "Conference USA",
+      "Mid-American",
+      "Mountain West",
+      "Pac-12",
+      "Sun Belt"
+    ]
+  }
+}

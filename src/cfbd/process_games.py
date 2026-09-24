@@ -1,15 +1,18 @@
 import json
+import sys
 from pathlib import Path
 
 import polars as pl
 
 
-# Season to process
-SEASON = 2026
+SEASON = int(sys.argv[1]) if len(sys.argv) > 1 else 2026
 
 
-# Determine repository root
-project_root = Path(__file__).resolve().parents[2]
+def get_project_root() -> Path:
+    return Path(__file__).resolve().parents[2]
+
+
+project_root = get_project_root()
 
 input_path = (
     project_root
@@ -24,55 +27,133 @@ output_path = (
     / "data"
     / "processed"
     / "games"
-    / "games.parquet"
+    / f"games_{SEASON}.parquet"
 )
 
 
-# Load raw CFBD game data
 with input_path.open("r", encoding="utf-8") as file:
     games = json.load(file)
 
 
-# Convert to a Polars DataFrame
-df = pl.DataFrame(games)
+rows = []
+
+for game in games:
+    playoff = game.get("playoff")
+
+    rows.append(
+        {
+            "game_id": game.get("id"),
+            "season": game.get("season"),
+            "week": game.get("week"),
+            "season_type": game.get("seasonType"),
+            "start_date": game.get("startDate"),
+            "completed": game.get("completed"),
+            "neutral_site": game.get("neutralSite"),
+            "conference_game": game.get("conferenceGame"),
+            "venue_id": game.get("venueId"),
+            "venue": game.get("venue"),
+
+            "home_team_id": game.get("homeId"),
+            "home_team": game.get("homeTeam"),
+            "home_conference_actual": game.get("homeConference"),
+            "home_classification": game.get("homeClassification"),
+            "home_points": game.get("homePoints"),
+
+            "away_team_id": game.get("awayId"),
+            "away_team": game.get("awayTeam"),
+            "away_conference_actual": game.get("awayConference"),
+            "away_classification": game.get("awayClassification"),
+            "away_points": game.get("awayPoints"),
+
+            "playoff_game": playoff is not None,
+            "playoff_competition": (
+                playoff.get("competition")
+                if playoff is not None
+                else None
+            ),
+            "playoff_format": (
+                playoff.get("format")
+                if playoff is not None
+                else None
+            ),
+            "playoff_round": (
+                playoff.get("round")
+                if playoff is not None
+                else None
+            ),
+            "playoff_round_name": (
+                playoff.get("roundName")
+                if playoff is not None
+                else None
+            ),
+            "playoff_bowl_name": (
+                playoff.get("bowlName")
+                if playoff is not None
+                else None
+            ),
+        }
+    )
 
 
-# Select and rename the fields needed by Power Digits
-games_processed = df.select(
-    [
-        pl.col("id").alias("game_id"),
-        pl.col("season"),
-        pl.col("week"),
-        pl.col("seasonType").alias("season_type"),
-        pl.col("startDate").alias("start_date"),
-        pl.col("completed"),
-        pl.col("neutralSite").alias("neutral_site"),
-        pl.col("conferenceGame").alias("conference_game"),
-        pl.col("venueId").alias("venue_id"),
-        pl.col("venue"),
+df = pl.DataFrame(
+    rows,
+    schema={
+        "game_id": pl.Int64,
+        "season": pl.Int64,
+        "week": pl.Int64,
+        "season_type": pl.String,
+        "start_date": pl.String,
+        "completed": pl.Boolean,
+        "neutral_site": pl.Boolean,
+        "conference_game": pl.Boolean,
+        "venue_id": pl.Int64,
+        "venue": pl.String,
 
-        pl.col("homeId").alias("home_team_id"),
-        pl.col("homeTeam").alias("home_team"),
-        pl.col("homeConference").alias("home_conference_actual"),
-        pl.col("homeClassification").alias("home_classification"),
-        pl.col("homePoints").alias("home_points"),
+        "home_team_id": pl.Int64,
+        "home_team": pl.String,
+        "home_conference_actual": pl.String,
+        "home_classification": pl.String,
+        "home_points": pl.Int64,
 
-        pl.col("awayId").alias("away_team_id"),
-        pl.col("awayTeam").alias("away_team"),
-        pl.col("awayConference").alias("away_conference_actual"),
-        pl.col("awayClassification").alias("away_classification"),
-        pl.col("awayPoints").alias("away_points"),
-    ]
+        "away_team_id": pl.Int64,
+        "away_team": pl.String,
+        "away_conference_actual": pl.String,
+        "away_classification": pl.String,
+        "away_points": pl.Int64,
+
+        "playoff_game": pl.Boolean,
+        "playoff_competition": pl.String,
+        "playoff_format": pl.String,
+        "playoff_round": pl.String,
+        "playoff_round_name": pl.String,
+        "playoff_bowl_name": pl.String,
+    },
 )
 
 
-# Ensure the output directory exists
 output_path.parent.mkdir(parents=True, exist_ok=True)
 
-
-# Save the processed game data
-games_processed.write_parquet(output_path)
+df.write_parquet(output_path)
 
 
-print(f"Successfully processed {len(games_processed)} games.")
+print(f"Successfully processed {len(df)} games for {SEASON}.")
 print(f"Saved to: {output_path}")
+
+print("\nPlayoff games:")
+print(
+    df
+    .filter(pl.col("playoff_game"))
+    .select(
+        [
+            "game_id",
+            "week",
+            "home_team",
+            "away_team",
+            "playoff_competition",
+            "playoff_format",
+            "playoff_round",
+            "playoff_round_name",
+            "playoff_bowl_name",
+        ]
+    )
+)
