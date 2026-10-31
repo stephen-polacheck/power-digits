@@ -292,16 +292,25 @@ def main():
         ]
     )
 
+    percentage_columns = [
+        "weighted_win_pct",
+        "strength_of_schedule",
+        "strength_of_wins",
+        "strength_of_losses",
+        "best_3_wins",
+    ]
+
     rankings = rankings.with_columns(
         [
             pl.col("power_digits").round(1),
             pl.col("weighted_wins").round(1),
             pl.col("weighted_losses").round(1),
-            pl.col("weighted_win_pct").round(1),
-            pl.col("strength_of_schedule").round(1),
-            pl.col("strength_of_wins").round(1),
-            pl.col("strength_of_losses").round(1),
-            pl.col("best_3_wins").round(1),
+        ]
+        + [
+            # Round half up to a whole number: 81.5 -> 82, 81.4 -> 81.
+            # Values are 0-100 (never negative), so floor(x + 0.5) is a true half-up.
+            (pl.col(column) + 0.5).floor().cast(pl.Int64).alias(column)
+            for column in percentage_columns
         ]
     )
 
