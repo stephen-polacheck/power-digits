@@ -9,8 +9,8 @@ PIPELINE = [
     ("Process schools", "src/cfbd/process_schools.py"),
     ("Get games", "src/cfbd/get_games.py"),
     ("Process games", "src/cfbd/process_games.py"),
-    ("Build team seasons", "src/cfbd/build_team_seasons.py"),
     ("Build team games", "src/cfbd/build_team_games.py"),
+    ("Build team seasons", "src/cfbd/build_team_seasons.py"),
     ("Conference strength", "src/power_digits/conference_strength.py"),
     ("Weighted caused wins/losses", "src/power_digits/weighted_caused_wins_losses.py"),
     ("Team weighted win pct", "src/power_digits/team_weighted_win_pct.py"),
@@ -19,6 +19,7 @@ PIPELINE = [
     ("Strength of schedule", "src/power_digits/strength_of_schedule.py"),
     ("Best 3 wins", "src/power_digits/best_3_wins.py"),
     ("Power Digits overall", "src/power_digits/power_digits_overall.py"),
+    ("Validate results", "src/validation/validate_season.py"),
 ]
 
 

@@ -13633,7 +13633,24 @@
     "classification": "iii",
     "color": "#000000",
     "alternateColor": "#null",
-    "logos": [],
+    "logos": [
+      "https://cdn.collegefootballdata.com/logos/500/2248.png",
+      "https://cdn.collegefootballdata.com/logos-dark/500/2248.png",
+      "https://cdn.collegefootballdata.com/logos/256/2248.png",
+      "https://cdn.collegefootballdata.com/logos-dark/256/2248.png",
+      "https://cdn.collegefootballdata.com/logos/128/2248.png",
+      "https://cdn.collegefootballdata.com/logos-dark/128/2248.png",
+      "https://cdn.collegefootballdata.com/logos/96/2248.png",
+      "https://cdn.collegefootballdata.com/logos-dark/96/2248.png",
+      "https://cdn.collegefootballdata.com/logos/64/2248.png",
+      "https://cdn.collegefootballdata.com/logos-dark/64/2248.png",
+      "https://cdn.collegefootballdata.com/logos/48/2248.png",
+      "https://cdn.collegefootballdata.com/logos-dark/48/2248.png",
+      "https://cdn.collegefootballdata.com/logos/32/2248.png",
+      "https://cdn.collegefootballdata.com/logos-dark/32/2248.png",
+      "https://cdn.collegefootballdata.com/logos/16/2248.png",
+      "https://cdn.collegefootballdata.com/logos-dark/16/2248.png"
+    ],
     "twitter": null,
     "location": {
       "id": 5851,
@@ -26651,7 +26668,7 @@
       "capacity": 8000,
       "constructionYear": 1991,
       "grass": false,
-      "dome": false
+      "dome": true
     }
   },
   {
