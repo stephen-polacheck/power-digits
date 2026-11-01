@@ -125,6 +125,67 @@ body::before {
   background: var(--pd-white);
 }
 
+/* ---------- Mobile menu (hamburger) ---------- */
+
+.menu-toggle {
+  display: none;            /* shown only on small screens */
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--pd-gold-metal);
+}
+
+@media (max-width: 699px) {
+  .site-header-inner {
+    padding: 0.9rem 1rem;
+  }
+
+  .site-logo img {
+    height: 40px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* links drop down as a list under the logo row when the menu is open */
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding-top: 0.5rem;
+  }
+
+  .site-header.menu-open .site-nav {
+    display: flex;
+  }
+
+  .site-nav a {
+    font-size: 1rem;
+    padding: 0.6rem 0;
+  }
+
+  .site-nav a.active::after {
+    bottom: 0.35rem;
+    right: auto;
+    width: 2.5rem;
+  }
+}
+
 /* ---------- Page content area ---------- */
 
 .page {

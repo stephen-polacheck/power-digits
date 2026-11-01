@@ -1,0 +1,211 @@
+/* =========================================================
+   Power Digits - playoff bracket page
+   ========================================================= */
+
+/* This page uses a wider content area than the rankings */
+.page-wide {
+  max-width: 1900px;
+}
+
+/* ---------- Format tabs ---------- */
+
+.format-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.format-tab {
+  padding: 0.45rem 1.1rem;
+  border: 1px solid var(--pd-gold);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--pd-gold-text);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.format-tab:hover {
+  color: var(--pd-white);
+}
+
+.format-tab.active {
+  background: var(--pd-gold-metal);
+  color: #1b1b1b;
+  border-color: transparent;
+}
+
+.bracket-title {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.status {
+  color: var(--pd-gold-text);
+  text-align: center;
+  padding: 2rem;
+}
+
+/* One-line explanation of how the field is picked */
+.bracket-note {
+  max-width: 60rem;
+  margin: 1rem auto 0;
+  text-align: center;
+  color: var(--pd-gold-text);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* ---------- Bracket stage ----------
+   The bracket is drawn at a fixed design size, then scaled to fit both the
+   page width and the visible screen height (never scrolls).
+   Narrow screens get a compact version without school names. */
+
+.bracket-area {
+  width: 100%;
+  overflow: hidden;
+}
+
+.bracket-stage {
+  position: relative;
+  margin: 0 auto;
+}
+
+.bracket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+}
+
+.bracket-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.bracket-lines polyline {
+  fill: none;
+  stroke: var(--pd-white);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+/* ---------- Team slots ----------
+   Each slot = primary box + racing stripes, all slanted.
+   lean-down: top slot of a game.  lean-up: bottom slot.
+   On the left half the two slots' stripes meet in a ">" point;
+   on the right half everything is mirrored into a "<" point. */
+
+.slot {
+  position: absolute;
+  display: flex;
+  --thick: 15px;
+  --thin: 6px;
+  --thin-primary: 9px;
+}
+
+.slot-left.lean-down  { --skew: 20deg; }
+.slot-left.lean-up    { --skew: -20deg; }
+.slot-right           { flex-direction: row-reverse; }
+.slot-right.lean-down { --skew: -20deg; }
+.slot-right.lean-up   { --skew: 20deg; }
+
+.slot-plate,
+.slot .stripe {
+  flex-shrink: 0;
+  transform: skewX(var(--skew));
+}
+
+.slot-plate {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  background: var(--primary);
+}
+
+.slot .stripe {
+  margin-left: -1px;   /* hides hairline seams */
+}
+
+.slot-right .stripe {
+  margin-left: 0;
+  margin-right: -1px;
+}
+
+.slot .stripe.thick { width: var(--thick); }
+.slot .stripe.thin { width: var(--thin); }
+.slot .stripe.thin-primary { width: var(--thin-primary); }
+.slot .stripe.primary { background: var(--primary); }
+.slot .stripe.secondary { background: var(--secondary); }
+
+.slot-inner {
+  transform: skewX(calc(var(--skew) * -1)); /* un-slant the seed, logo, name */
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  min-width: 0;
+  padding: 0 0.6rem;
+}
+
+/* Right half reads: name, logo, seed (seed on the outside) */
+.slot-right .slot-inner {
+  flex-direction: row-reverse;
+}
+
+.slot-seed {
+  width: 1.6rem;
+  flex-shrink: 0;
+  text-align: center;
+  color: var(--pd-white);
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.slot-inner img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.slot-name {
+  color: var(--pd-white);
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slot-right .slot-name {
+  text-align: right;
+}
+
+/* Empty winner boxes: Power Digits colors */
+.slot-empty .slot-plate {
+  background: var(--primary);
+  box-shadow: inset 0 0 0 1px rgba(189, 173, 124, 0.35);
+}
+
+/* Compact bracket (narrow screens): seed, logo and colors only */
+.bracket-compact .slot-name {
+  display: none;
+}
+
+.bracket-compact .slot-inner {
+  justify-content: center;
+  padding: 0 0.3rem;
+}

@@ -6,6 +6,7 @@
 const NAV_LINKS = [
   // path is relative to the docs/ folder
   { label: "Current Rankings", path: "currentrankings/" },
+  { label: "Playoff Formats", path: "playoffs/" },
   // { label: "Math & FAQ", path: "math-faq/" },   <- turn on once that page exists
   { label: "X", url: "https://x.com/PowerDigits" },
   { label: "Instagram", url: "https://www.instagram.com/powerdigits" },
@@ -57,7 +58,20 @@ function buildHeader() {
     nav.appendChild(a);
   }
 
+  // Hamburger button: only visible on small screens (see site.css)
+  const toggle = document.createElement("button");
+  toggle.className = "menu-toggle";
+  toggle.type = "button";
+  toggle.setAttribute("aria-label", "Menu");
+  toggle.setAttribute("aria-expanded", "false");
+  for (let i = 0; i < 3; i++) toggle.appendChild(document.createElement("span"));
+  toggle.addEventListener("click", () => {
+    const open = header.classList.toggle("menu-open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+
   inner.appendChild(logoLink);
+  inner.appendChild(toggle);
   inner.appendChild(nav);
   header.appendChild(inner);
   document.body.prepend(header);

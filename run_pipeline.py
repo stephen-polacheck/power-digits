@@ -21,6 +21,7 @@ PIPELINE = [
     ("Power Digits overall", "src/power_digits/power_digits_overall.py"),
     ("Validate results", "src/validation/validate_season.py"),
     ("Build website rankings", "src/website/build_rankings.py"),
+    ("Build playoff brackets", "src/website/build_playoffs.py"),
 ]
 
 
