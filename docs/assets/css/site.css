@@ -221,9 +221,14 @@ body::before {
   text-align: center;
 }
 
-/* No bold text anywhere on the site */
-*,
-*::before,
-*::after {
+/* Quantify text is never bold (everything else keeps its normal weight) */
+.hero-title,
+.page-title,
+.faq-title,
+.bracket-title,
+.rank,
+.team-name,
+.slot-seed,
+.slot-name {
   font-weight: 400 !important;
 }

@@ -35,7 +35,7 @@
           "primary_color": "#2774ae",
           "secondary_color": "#f2a900",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/26.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/26.png"
+          "logo_dark_url": "https://uclabruins.com/imgproxy/756mMRj9O6xXIgQLZv-Bs98gvrOWkUVUx0RN_6EJUts/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VjbGFicnVpbnMtY29tLXByb2QvMjAyNi8wNS8yMS9XbFp2bDh6a1NEa2dDMlRSRlV3OEFkVkdMZ2JiMWtEZG5raWE2cFd4LnBuZw.png"
         },
         {
           "seed": 3,
@@ -103,7 +103,7 @@
           "primary_color": "#2774ae",
           "secondary_color": "#f2a900",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/26.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/26.png"
+          "logo_dark_url": "https://uclabruins.com/imgproxy/756mMRj9O6xXIgQLZv-Bs98gvrOWkUVUx0RN_6EJUts/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VjbGFicnVpbnMtY29tLXByb2QvMjAyNi8wNS8yMS9XbFp2bDh6a1NEa2dDMlRSRlV3OEFkVkdMZ2JiMWtEZG5raWE2cFd4LnBuZw.png"
         },
         {
           "seed": 3,
@@ -145,7 +145,7 @@
           "conference": "SEC",
           "record": "6-2",
           "power_digits": 77.5,
-          "primary_color": "#bf5700",
+          "primary_color": "#BF5700",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/251.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/251.png"
@@ -163,7 +163,7 @@
           "primary_color": "#9e1b32",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/333.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/333.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/258022c1-fed4-a0ce-c017-1f853c81d1a8/logos/primary_logo_white.png"
         },
         {
           "seed": 7,
@@ -178,7 +178,7 @@
           "primary_color": "#0033a0",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/96.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/96.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/71774c28-3107-36f7-b5ff-417d929d48ce/logos/primary_logo_white.png"
         },
         {
           "seed": 8,
@@ -231,7 +231,7 @@
           "primary_color": "#2774ae",
           "secondary_color": "#f2a900",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/26.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/26.png"
+          "logo_dark_url": "https://uclabruins.com/imgproxy/756mMRj9O6xXIgQLZv-Bs98gvrOWkUVUx0RN_6EJUts/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VjbGFicnVpbnMtY29tLXByb2QvMjAyNi8wNS8yMS9XbFp2bDh6a1NEa2dDMlRSRlV3OEFkVkdMZ2JiMWtEZG5raWE2cFd4LnBuZw.png"
         },
         {
           "seed": 3,
@@ -273,7 +273,7 @@
           "conference": "SEC",
           "record": "6-2",
           "power_digits": 77.5,
-          "primary_color": "#bf5700",
+          "primary_color": "#BF5700",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/251.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/251.png"
@@ -291,7 +291,7 @@
           "primary_color": "#9e1b32",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/333.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/333.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/258022c1-fed4-a0ce-c017-1f853c81d1a8/logos/primary_logo_white.png"
         },
         {
           "seed": 7,
@@ -306,7 +306,7 @@
           "primary_color": "#0033a0",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/96.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/96.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/71774c28-3107-36f7-b5ff-417d929d48ce/logos/primary_logo_white.png"
         },
         {
           "seed": 8,
@@ -318,8 +318,8 @@
           "conference": "ACC",
           "record": "7-1",
           "power_digits": 75.8,
-          "primary_color": "#ceb888",
-          "secondary_color": "#2c2a29",
+          "primary_color": "#000000",
+          "secondary_color": "#CEB888",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/154.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/154.png"
         },
@@ -336,7 +336,7 @@
           "primary_color": "#ba0c2f",
           "secondary_color": "#a7b1b7",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/194.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/194.png"
+          "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/ohiostatebuckeyes.com/images/nextgen_2023/logo_main.svg"
         },
         {
           "seed": 10,
@@ -366,7 +366,7 @@
           "primary_color": "#990000",
           "secondary_color": "#ffcc00",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/30.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/30.png"
+          "logo_dark_url": "https://b.fssta.com/uploads/application/college/team-logos/USC-alternate.vresize.350.350.medium.1.png"
         },
         {
           "seed": 12,
@@ -419,7 +419,7 @@
           "primary_color": "#2774ae",
           "secondary_color": "#f2a900",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/26.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/26.png"
+          "logo_dark_url": "https://uclabruins.com/imgproxy/756mMRj9O6xXIgQLZv-Bs98gvrOWkUVUx0RN_6EJUts/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VjbGFicnVpbnMtY29tLXByb2QvMjAyNi8wNS8yMS9XbFp2bDh6a1NEa2dDMlRSRlV3OEFkVkdMZ2JiMWtEZG5raWE2cFd4LnBuZw.png"
         },
         {
           "seed": 3,
@@ -461,7 +461,7 @@
           "conference": "SEC",
           "record": "6-2",
           "power_digits": 77.5,
-          "primary_color": "#bf5700",
+          "primary_color": "#BF5700",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/251.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/251.png"
@@ -479,7 +479,7 @@
           "primary_color": "#9e1b32",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/333.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/333.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/258022c1-fed4-a0ce-c017-1f853c81d1a8/logos/primary_logo_white.png"
         },
         {
           "seed": 7,
@@ -494,7 +494,7 @@
           "primary_color": "#0033a0",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/96.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/96.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/71774c28-3107-36f7-b5ff-417d929d48ce/logos/primary_logo_white.png"
         },
         {
           "seed": 8,
@@ -506,8 +506,8 @@
           "conference": "ACC",
           "record": "7-1",
           "power_digits": 75.8,
-          "primary_color": "#ceb888",
-          "secondary_color": "#2c2a29",
+          "primary_color": "#000000",
+          "secondary_color": "#CEB888",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/154.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/154.png"
         },
@@ -524,7 +524,7 @@
           "primary_color": "#ba0c2f",
           "secondary_color": "#a7b1b7",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/194.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/194.png"
+          "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/ohiostatebuckeyes.com/images/nextgen_2023/logo_main.svg"
         },
         {
           "seed": 10,
@@ -554,7 +554,7 @@
           "primary_color": "#990000",
           "secondary_color": "#ffcc00",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/30.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/30.png"
+          "logo_dark_url": "https://b.fssta.com/uploads/application/college/team-logos/USC-alternate.vresize.350.350.medium.1.png"
         },
         {
           "seed": 12,
@@ -566,8 +566,8 @@
           "conference": "Big 12",
           "record": "7-1",
           "power_digits": 73.3,
-          "primary_color": "#003da5",
-          "secondary_color": "#002e5d",
+          "primary_color": "#0047BA",
+          "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/252.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/252.png"
         },
@@ -597,7 +597,7 @@
           "record": "7-1",
           "power_digits": 72.8,
           "primary_color": "#ba0c2f",
-          "secondary_color": "#2c2a29",
+          "secondary_color": "#000000",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/61.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/61.png"
         },
@@ -614,7 +614,7 @@
           "primary_color": "#461d7c",
           "secondary_color": "#fdd023",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/99.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/99.png"
+          "logo_dark_url": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/99.png"
         },
         {
           "seed": 16,
@@ -626,10 +626,10 @@
           "conference": "Big 12",
           "record": "7-1",
           "power_digits": 71.4,
-          "primary_color": "#c30020",
-          "secondary_color": "#000000",
+          "primary_color": "#000000",
+          "secondary_color": "#C30020",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/2641.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/2641.png"
+          "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/texastech.com/images/nextgen_2023/TT_on_black.svg"
         },
         {
           "seed": 17,
@@ -689,7 +689,7 @@
           "primary_color": "#c8102e",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/248.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/248.png"
+          "logo_dark_url": "https://www.uh.edu/brand/_img/uh_white_red.png"
         },
         {
           "seed": 21,
@@ -719,7 +719,7 @@
           "primary_color": "#0021a5",
           "secondary_color": "#fa4616",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/57.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/57.png"
+          "logo_dark_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
         },
         {
           "seed": 23,
@@ -731,7 +731,7 @@
           "conference": "SEC",
           "record": "6-2",
           "power_digits": 66.0,
-          "primary_color": "#ff8200",
+          "primary_color": "#FF8200",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/2633.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/2633.png"
@@ -746,8 +746,8 @@
           "conference": "SEC",
           "record": "6-2",
           "power_digits": 65.9,
-          "primary_color": "#f1b82d",
-          "secondary_color": "#000000",
+          "primary_color": "#000000",
+          "secondary_color": "#FDB719",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/142.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/142.png"
         }
@@ -787,7 +787,7 @@
           "primary_color": "#2774ae",
           "secondary_color": "#f2a900",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/26.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/26.png"
+          "logo_dark_url": "https://uclabruins.com/imgproxy/756mMRj9O6xXIgQLZv-Bs98gvrOWkUVUx0RN_6EJUts/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VjbGFicnVpbnMtY29tLXByb2QvMjAyNi8wNS8yMS9XbFp2bDh6a1NEa2dDMlRSRlV3OEFkVkdMZ2JiMWtEZG5raWE2cFd4LnBuZw.png"
         },
         {
           "seed": 3,
@@ -829,7 +829,7 @@
           "conference": "SEC",
           "record": "6-2",
           "power_digits": 77.5,
-          "primary_color": "#bf5700",
+          "primary_color": "#BF5700",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/251.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/251.png"
@@ -847,7 +847,7 @@
           "primary_color": "#9e1b32",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/333.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/333.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/258022c1-fed4-a0ce-c017-1f853c81d1a8/logos/primary_logo_white.png"
         },
         {
           "seed": 7,
@@ -862,7 +862,7 @@
           "primary_color": "#0033a0",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/96.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/96.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/71774c28-3107-36f7-b5ff-417d929d48ce/logos/primary_logo_white.png"
         },
         {
           "seed": 8,
@@ -874,8 +874,8 @@
           "conference": "ACC",
           "record": "7-1",
           "power_digits": 75.8,
-          "primary_color": "#ceb888",
-          "secondary_color": "#2c2a29",
+          "primary_color": "#000000",
+          "secondary_color": "#CEB888",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/154.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/154.png"
         },
@@ -892,7 +892,7 @@
           "primary_color": "#ba0c2f",
           "secondary_color": "#a7b1b7",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/194.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/194.png"
+          "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/ohiostatebuckeyes.com/images/nextgen_2023/logo_main.svg"
         },
         {
           "seed": 10,
@@ -922,7 +922,7 @@
           "primary_color": "#990000",
           "secondary_color": "#ffcc00",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/30.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/30.png"
+          "logo_dark_url": "https://b.fssta.com/uploads/application/college/team-logos/USC-alternate.vresize.350.350.medium.1.png"
         },
         {
           "seed": 12,
@@ -934,8 +934,8 @@
           "conference": "Big 12",
           "record": "7-1",
           "power_digits": 73.3,
-          "primary_color": "#003da5",
-          "secondary_color": "#002e5d",
+          "primary_color": "#0047BA",
+          "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/252.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/252.png"
         },
@@ -965,7 +965,7 @@
           "record": "7-1",
           "power_digits": 72.8,
           "primary_color": "#ba0c2f",
-          "secondary_color": "#2c2a29",
+          "secondary_color": "#000000",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/61.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/61.png"
         },
@@ -982,7 +982,7 @@
           "primary_color": "#461d7c",
           "secondary_color": "#fdd023",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/99.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/99.png"
+          "logo_dark_url": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/99.png"
         },
         {
           "seed": 16,
@@ -994,10 +994,10 @@
           "conference": "Big 12",
           "record": "7-1",
           "power_digits": 71.4,
-          "primary_color": "#c30020",
-          "secondary_color": "#000000",
+          "primary_color": "#000000",
+          "secondary_color": "#C30020",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/2641.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/2641.png"
+          "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/texastech.com/images/nextgen_2023/TT_on_black.svg"
         },
         {
           "seed": 17,
@@ -1069,8 +1069,8 @@
           "conference": "Mountain West",
           "record": "7-1",
           "power_digits": 63.2,
-          "primary_color": "#ba0c2f",
-          "secondary_color": "#a7a8aa",
+          "primary_color": "#BA0C2F",
+          "secondary_color": "#A7A8AA",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/167.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/167.png"
         },
@@ -1080,7 +1080,7 @@
           "rank": 42,
           "team_id": 2348,
           "school_name": "Louisiana Tech",
-          "school_short": "Louisiana Tech",
+          "school_short": "LA Tech",
           "conference": "Sun Belt",
           "record": "6-2",
           "power_digits": 58.4,
@@ -1117,7 +1117,7 @@
           "primary_color": "#024230",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/195.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/195.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/eb84d343-74ae-03e0-bff8-6c19b5b917e6/logos/secondary_logo_white.png"
         }
       ]
     },
@@ -1155,7 +1155,7 @@
           "primary_color": "#2774ae",
           "secondary_color": "#f2a900",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/26.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/26.png"
+          "logo_dark_url": "https://uclabruins.com/imgproxy/756mMRj9O6xXIgQLZv-Bs98gvrOWkUVUx0RN_6EJUts/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VjbGFicnVpbnMtY29tLXByb2QvMjAyNi8wNS8yMS9XbFp2bDh6a1NEa2dDMlRSRlV3OEFkVkdMZ2JiMWtEZG5raWE2cFd4LnBuZw.png"
         },
         {
           "seed": 3,
@@ -1197,7 +1197,7 @@
           "conference": "SEC",
           "record": "6-2",
           "power_digits": 77.5,
-          "primary_color": "#bf5700",
+          "primary_color": "#BF5700",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/251.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/251.png"
@@ -1215,7 +1215,7 @@
           "primary_color": "#9e1b32",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/333.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/333.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/258022c1-fed4-a0ce-c017-1f853c81d1a8/logos/primary_logo_white.png"
         },
         {
           "seed": 7,
@@ -1230,7 +1230,7 @@
           "primary_color": "#0033a0",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/96.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/96.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/71774c28-3107-36f7-b5ff-417d929d48ce/logos/primary_logo_white.png"
         },
         {
           "seed": 8,
@@ -1242,8 +1242,8 @@
           "conference": "ACC",
           "record": "7-1",
           "power_digits": 75.8,
-          "primary_color": "#ceb888",
-          "secondary_color": "#2c2a29",
+          "primary_color": "#000000",
+          "secondary_color": "#CEB888",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/154.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/154.png"
         },
@@ -1260,7 +1260,7 @@
           "primary_color": "#ba0c2f",
           "secondary_color": "#a7b1b7",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/194.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/194.png"
+          "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/ohiostatebuckeyes.com/images/nextgen_2023/logo_main.svg"
         },
         {
           "seed": 10,
@@ -1290,7 +1290,7 @@
           "primary_color": "#990000",
           "secondary_color": "#ffcc00",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/30.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/30.png"
+          "logo_dark_url": "https://b.fssta.com/uploads/application/college/team-logos/USC-alternate.vresize.350.350.medium.1.png"
         },
         {
           "seed": 12,
@@ -1302,8 +1302,8 @@
           "conference": "Big 12",
           "record": "7-1",
           "power_digits": 73.3,
-          "primary_color": "#003da5",
-          "secondary_color": "#002e5d",
+          "primary_color": "#0047BA",
+          "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/252.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/252.png"
         },
@@ -1333,7 +1333,7 @@
           "record": "7-1",
           "power_digits": 72.8,
           "primary_color": "#ba0c2f",
-          "secondary_color": "#2c2a29",
+          "secondary_color": "#000000",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/61.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/61.png"
         },
@@ -1350,7 +1350,7 @@
           "primary_color": "#461d7c",
           "secondary_color": "#fdd023",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/99.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/99.png"
+          "logo_dark_url": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/99.png"
         },
         {
           "seed": 16,
@@ -1362,10 +1362,10 @@
           "conference": "Big 12",
           "record": "7-1",
           "power_digits": 71.4,
-          "primary_color": "#c30020",
-          "secondary_color": "#000000",
+          "primary_color": "#000000",
+          "secondary_color": "#C30020",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/2641.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/2641.png"
+          "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/texastech.com/images/nextgen_2023/TT_on_black.svg"
         },
         {
           "seed": 17,
@@ -1425,7 +1425,7 @@
           "primary_color": "#c8102e",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/248.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/248.png"
+          "logo_dark_url": "https://www.uh.edu/brand/_img/uh_white_red.png"
         },
         {
           "seed": 21,
@@ -1455,7 +1455,7 @@
           "primary_color": "#0021a5",
           "secondary_color": "#fa4616",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/57.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/57.png"
+          "logo_dark_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
         },
         {
           "seed": 23,
@@ -1467,7 +1467,7 @@
           "conference": "SEC",
           "record": "6-2",
           "power_digits": 66.0,
-          "primary_color": "#ff8200",
+          "primary_color": "#FF8200",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/2633.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/2633.png"
@@ -1482,8 +1482,8 @@
           "conference": "SEC",
           "record": "6-2",
           "power_digits": 65.9,
-          "primary_color": "#f1b82d",
-          "secondary_color": "#000000",
+          "primary_color": "#000000",
+          "secondary_color": "#FDB719",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/142.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/142.png"
         },
@@ -1500,7 +1500,7 @@
           "primary_color": "#a00000",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/275.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/275.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/79b14620-600c-7c79-3fb4-b62ed2a45ca0/logos/primary_logo_on_primary_color.png"
         },
         {
           "seed": 26,
@@ -1512,10 +1512,10 @@
           "conference": "Big Ten",
           "record": "6-2",
           "power_digits": 64.1,
-          "primary_color": "#582c83",
+          "primary_color": "#4E2A84",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/77.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/77.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/ca8359bf-52ca-f069-b9c4-bbfbcfc15c64/logos/primary_logo_white.png"
         },
         {
           "seed": 27,
@@ -1542,8 +1542,8 @@
           "conference": "Big 12",
           "record": "6-2",
           "power_digits": 63.4,
-          "primary_color": "#cc0033",
-          "secondary_color": "#003366",
+          "primary_color": "#AB0520",
+          "secondary_color": "#0C234B",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/12.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/12.png"
         },
@@ -1557,8 +1557,8 @@
           "conference": "Mountain West",
           "record": "7-1",
           "power_digits": 63.2,
-          "primary_color": "#ba0c2f",
-          "secondary_color": "#a7a8aa",
+          "primary_color": "#BA0C2F",
+          "secondary_color": "#A7A8AA",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/167.png",
           "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/167.png"
         },
@@ -1568,7 +1568,7 @@
           "rank": 42,
           "team_id": 2348,
           "school_name": "Louisiana Tech",
-          "school_short": "Louisiana Tech",
+          "school_short": "LA Tech",
           "conference": "Sun Belt",
           "record": "6-2",
           "power_digits": 58.4,
@@ -1605,7 +1605,7 @@
           "primary_color": "#024230",
           "secondary_color": "#ffffff",
           "logo_url": "https://cdn.collegefootballdata.com/logos/500/195.png",
-          "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/195.png"
+          "logo_dark_url": "https://a.espncdn.com/guid/eb84d343-74ae-03e0-bff8-6c19b5b917e6/logos/secondary_logo_white.png"
         }
       ]
     },
@@ -1629,7 +1629,7 @@
             "primary_color": "#2774ae",
             "secondary_color": "#f2a900",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/26.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/26.png"
+            "logo_dark_url": "https://uclabruins.com/imgproxy/756mMRj9O6xXIgQLZv-Bs98gvrOWkUVUx0RN_6EJUts/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VjbGFicnVpbnMtY29tLXByb2QvMjAyNi8wNS8yMS9XbFp2bDh6a1NEa2dDMlRSRlV3OEFkVkdMZ2JiMWtEZG5raWE2cFd4LnBuZw.png"
           },
           {
             "seed": 2,
@@ -1659,7 +1659,7 @@
             "primary_color": "#ba0c2f",
             "secondary_color": "#a7b1b7",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/194.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/194.png"
+            "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/ohiostatebuckeyes.com/images/nextgen_2023/logo_main.svg"
           },
           {
             "seed": 4,
@@ -1674,7 +1674,7 @@
             "primary_color": "#990000",
             "secondary_color": "#ffcc00",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/30.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/30.png"
+            "logo_dark_url": "https://b.fssta.com/uploads/application/college/team-logos/USC-alternate.vresize.350.350.medium.1.png"
           }
         ],
         "SEC": [
@@ -1688,7 +1688,7 @@
             "conference": "SEC",
             "record": "6-2",
             "power_digits": 77.5,
-            "primary_color": "#bf5700",
+            "primary_color": "#BF5700",
             "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/251.png",
             "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/251.png"
@@ -1706,7 +1706,7 @@
             "primary_color": "#9e1b32",
             "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/333.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/333.png"
+            "logo_dark_url": "https://a.espncdn.com/guid/258022c1-fed4-a0ce-c017-1f853c81d1a8/logos/primary_logo_white.png"
           },
           {
             "seed": 3,
@@ -1721,7 +1721,7 @@
             "primary_color": "#0033a0",
             "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/96.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/96.png"
+            "logo_dark_url": "https://a.espncdn.com/guid/71774c28-3107-36f7-b5ff-417d929d48ce/logos/primary_logo_white.png"
           },
           {
             "seed": 4,
@@ -1765,8 +1765,8 @@
             "conference": "ACC",
             "record": "7-1",
             "power_digits": 75.8,
-            "primary_color": "#ceb888",
-            "secondary_color": "#2c2a29",
+            "primary_color": "#000000",
+            "secondary_color": "#CEB888",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/154.png",
             "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/154.png"
           },
@@ -1806,7 +1806,7 @@
             "rank": 42,
             "team_id": 2348,
             "school_name": "Louisiana Tech",
-            "school_short": "Louisiana Tech",
+            "school_short": "LA Tech",
             "conference": "Sun Belt",
             "record": "6-2",
             "power_digits": 58.4,
@@ -1828,7 +1828,7 @@
             "primary_color": "#024230",
             "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/195.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/195.png"
+            "logo_dark_url": "https://a.espncdn.com/guid/eb84d343-74ae-03e0-bff8-6c19b5b917e6/logos/secondary_logo_white.png"
           }
         ],
         "Big 12": [
@@ -1857,8 +1857,8 @@
             "conference": "Big 12",
             "record": "7-1",
             "power_digits": 73.3,
-            "primary_color": "#003da5",
-            "secondary_color": "#002e5d",
+            "primary_color": "#0047BA",
+            "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/252.png",
             "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/252.png"
           },
@@ -1872,10 +1872,10 @@
             "conference": "Big 12",
             "record": "7-1",
             "power_digits": 71.4,
-            "primary_color": "#c30020",
-            "secondary_color": "#000000",
+            "primary_color": "#000000",
+            "secondary_color": "#C30020",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/2641.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/2641.png"
+            "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/texastech.com/images/nextgen_2023/TT_on_black.svg"
           },
           {
             "seed": 4,
@@ -1902,8 +1902,8 @@
             "conference": "Mountain West",
             "record": "7-1",
             "power_digits": 63.2,
-            "primary_color": "#ba0c2f",
-            "secondary_color": "#a7a8aa",
+            "primary_color": "#BA0C2F",
+            "secondary_color": "#A7A8AA",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/167.png",
             "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/167.png"
           },
@@ -1945,7 +1945,7 @@
             "primary_color": "#2774ae",
             "secondary_color": "#f2a900",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/26.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/26.png"
+            "logo_dark_url": "https://uclabruins.com/imgproxy/756mMRj9O6xXIgQLZv-Bs98gvrOWkUVUx0RN_6EJUts/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VjbGFicnVpbnMtY29tLXByb2QvMjAyNi8wNS8yMS9XbFp2bDh6a1NEa2dDMlRSRlV3OEFkVkdMZ2JiMWtEZG5raWE2cFd4LnBuZw.png"
           },
           {
             "seed": 2,
@@ -1975,7 +1975,7 @@
             "primary_color": "#ba0c2f",
             "secondary_color": "#a7b1b7",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/194.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/194.png"
+            "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/ohiostatebuckeyes.com/images/nextgen_2023/logo_main.svg"
           },
           {
             "seed": 4,
@@ -1990,7 +1990,7 @@
             "primary_color": "#990000",
             "secondary_color": "#ffcc00",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/30.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/30.png"
+            "logo_dark_url": "https://b.fssta.com/uploads/application/college/team-logos/USC-alternate.vresize.350.350.medium.1.png"
           },
           {
             "seed": 5,
@@ -2034,7 +2034,7 @@
             "conference": "SEC",
             "record": "6-2",
             "power_digits": 77.5,
-            "primary_color": "#bf5700",
+            "primary_color": "#BF5700",
             "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/251.png",
             "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/251.png"
@@ -2052,7 +2052,7 @@
             "primary_color": "#9e1b32",
             "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/333.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/333.png"
+            "logo_dark_url": "https://a.espncdn.com/guid/258022c1-fed4-a0ce-c017-1f853c81d1a8/logos/primary_logo_white.png"
           },
           {
             "seed": 3,
@@ -2067,7 +2067,7 @@
             "primary_color": "#0033a0",
             "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/96.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/96.png"
+            "logo_dark_url": "https://a.espncdn.com/guid/71774c28-3107-36f7-b5ff-417d929d48ce/logos/primary_logo_white.png"
           },
           {
             "seed": 4,
@@ -2095,7 +2095,7 @@
             "record": "7-1",
             "power_digits": 72.8,
             "primary_color": "#ba0c2f",
-            "secondary_color": "#2c2a29",
+            "secondary_color": "#000000",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/61.png",
             "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/61.png"
           },
@@ -2112,7 +2112,7 @@
             "primary_color": "#461d7c",
             "secondary_color": "#fdd023",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/99.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/99.png"
+            "logo_dark_url": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/99.png"
           }
         ],
         "ACC": [
@@ -2141,8 +2141,8 @@
             "conference": "ACC",
             "record": "7-1",
             "power_digits": 75.8,
-            "primary_color": "#ceb888",
-            "secondary_color": "#2c2a29",
+            "primary_color": "#000000",
+            "secondary_color": "#CEB888",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/154.png",
             "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/154.png"
           },
@@ -2182,7 +2182,7 @@
             "rank": 42,
             "team_id": 2348,
             "school_name": "Louisiana Tech",
-            "school_short": "Louisiana Tech",
+            "school_short": "LA Tech",
             "conference": "Sun Belt",
             "record": "6-2",
             "power_digits": 58.4,
@@ -2204,7 +2204,7 @@
             "primary_color": "#024230",
             "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/195.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/195.png"
+            "logo_dark_url": "https://a.espncdn.com/guid/eb84d343-74ae-03e0-bff8-6c19b5b917e6/logos/secondary_logo_white.png"
           }
         ],
         "Big 12": [
@@ -2233,8 +2233,8 @@
             "conference": "Big 12",
             "record": "7-1",
             "power_digits": 73.3,
-            "primary_color": "#003da5",
-            "secondary_color": "#002e5d",
+            "primary_color": "#0047BA",
+            "secondary_color": "#ffffff",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/252.png",
             "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/252.png"
           },
@@ -2248,10 +2248,10 @@
             "conference": "Big 12",
             "record": "7-1",
             "power_digits": 71.4,
-            "primary_color": "#c30020",
-            "secondary_color": "#000000",
+            "primary_color": "#000000",
+            "secondary_color": "#C30020",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/2641.png",
-            "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/2641.png"
+            "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/texastech.com/images/nextgen_2023/TT_on_black.svg"
           },
           {
             "seed": 4,
@@ -2278,8 +2278,8 @@
             "conference": "Mountain West",
             "record": "7-1",
             "power_digits": 63.2,
-            "primary_color": "#ba0c2f",
-            "secondary_color": "#a7a8aa",
+            "primary_color": "#BA0C2F",
+            "secondary_color": "#A7A8AA",
             "logo_url": "https://cdn.collegefootballdata.com/logos/500/167.png",
             "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/167.png"
           },
