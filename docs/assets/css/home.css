@@ -1,0 +1,86 @@
+/* =========================================================
+   Power Digits - landing page
+   ========================================================= */
+
+/* The page fills the screen: header on top, image below it */
+body.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* The geometric pattern isn't needed behind the photo */
+body.home::before {
+  display: none;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;       /* vertical position of the content */
+  justify-content: center;   /* horizontal position of the content */
+  padding: 2rem 1rem;
+  background: url("../img/HomePage.jpg") center / cover no-repeat;
+}
+
+/* Title, tagline and byline stacked above the button */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+}
+
+.hero-title {
+  margin: 0;
+  font-family: var(--pd-display-font);
+  font-size: clamp(2.4rem, 8.5vw, 7rem);   /* scales with the screen width */
+  white-space: nowrap;                     /* always one line */
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  /* metallic gold text */
+  background: var(--pd-gold-metal-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  /* slight shadow so it stands out from the photo */
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.85));
+}
+
+.hero-tagline {
+  margin: 1.1rem 0 0;
+  color: var(--pd-white);
+  font-size: clamp(1.15rem, 2.6vw, 1.6rem);
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+}
+
+.hero-byline {
+  margin: 0.5rem 0 2rem;
+  color: var(--pd-white);
+  opacity: 0.85;
+  font-size: clamp(0.85rem, 1.6vw, 1rem);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
+}
+
+.hero-button {
+  padding: 0.9rem 2.2rem;
+  border-radius: 4px;
+  background: var(--pd-gold-metal);
+  color: #1b1b1b;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.65);
+}

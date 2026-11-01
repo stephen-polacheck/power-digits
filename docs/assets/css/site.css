@@ -3,6 +3,12 @@
    Change the colors and fonts here and every page follows.
    ========================================================= */
 
+@font-face {
+  font-family: "Quantify";
+  src: url("../fonts/Quantify.ttf") format("truetype");
+  font-display: swap;
+}
+
 :root {
   --pd-dark: #2b2b2b;        /* header bar */
   --pd-gold: #bdad7c;        /* brand gold */
@@ -12,6 +18,7 @@
   --pd-white: #ffffff;
   --pd-good: #5fd68a;        /* top-20 stat (green) */
   --pd-bad: #ff6b6b;         /* bottom-20 stat (red) */
+  --pd-display-font: "Quantify", var(--pd-font);
 
   /* Metallic gold: light and dark bands around the brand gold */
   --pd-gold-metal: linear-gradient(

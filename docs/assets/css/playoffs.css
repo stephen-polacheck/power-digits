@@ -43,7 +43,8 @@
 .bracket-title {
   margin: 0 0 1rem;
   text-align: center;
-  font-size: 1.4rem;
+  font-family: var(--pd-display-font);
+  font-size: 1.9rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -168,6 +169,7 @@
   width: 1.6rem;
   flex-shrink: 0;
   text-align: center;
+  font-family: var(--pd-display-font);
   color: var(--pd-white);
   font-weight: 800;
   font-size: 1.3rem;
@@ -184,6 +186,7 @@
   color: var(--pd-white);
   font-weight: 700;
   font-size: 1.05rem;
+  font-family: var(--pd-display-font);
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;

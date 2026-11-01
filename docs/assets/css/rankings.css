@@ -174,6 +174,7 @@
   text-align: center;
   color: var(--pd-white);
   font-weight: 700;
+  font-family: var(--pd-display-font);
   font-size: 1.15rem;
 }
 
@@ -188,6 +189,7 @@
   color: var(--pd-white);
   font-weight: 700;
   font-size: 1.05rem;
+  font-family: var(--pd-display-font);
   text-transform: uppercase;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -469,11 +471,13 @@
   }
 
   .rank {
+    font-family: var(--pd-display-font);
     width: 1.75rem;
     font-size: 0.95rem;
   }
 
   .team-name {
+    font-family: var(--pd-display-font);
     font-size: 0.85rem;
   }
 }

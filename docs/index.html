@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Power Digits Football</title>
-  <!-- Temporary: send visitors to the rankings until the homepage is built -->
-  <meta http-equiv="refresh" content="0; url=currentrankings/">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/home.css">
 </head>
-<body>
-  <p><a href="currentrankings/">Go to the current rankings</a></p>
+<!-- data-root is empty: this page already sits in the docs/ folder -->
+<body class="home" data-root="">
+
+  <main class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">POWER DIGITS</h1>
+      <p class="hero-tagline">Taking opinions out of college football.</p>
+      <p class="hero-byline">A simple college football ranking algorithm, designed by Stephen Polacheck</p>
+      <a class="hero-button" href="currentrankings/">See Current Rankings</a>
+    </div>
+  </main>
+
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
