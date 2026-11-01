@@ -33,9 +33,25 @@ aesthetics_path = (
 
 output_path = (
     project_root
+    / "docs"
     / "data"
-    / "website"
     / "rankings.json"
+)
+
+game_weights_path = (
+    project_root
+    / "data"
+    / "processed"
+    / "team_game_weights"
+    / f"team_game_weights_{SEASON}.parquet"
+)
+
+best_3_games_path = (
+    project_root
+    / "data"
+    / "processed"
+    / "best_3_wins"
+    / f"best_3_wins_games_{SEASON}.parquet"
 )
 
 
@@ -58,6 +74,91 @@ def load_aesthetics(path: Path) -> pl.DataFrame:
         data = json.load(file)
 
     return pl.DataFrame(data)
+
+def build_game_lists(game_weights, power_digits, aesthetics, best_3_games, team_records):
+    """Return {team_id: [game, game, ...]} for the website pop-ups."""
+
+    opponent_info = aesthetics.select([
+        pl.col("school_id").alias("opponent_id"),
+        pl.col("school_short").alias("opponent_short"),
+        pl.col("logo_dark_url").alias("opponent_logo_dark"),
+        pl.col("logo_url").alias("opponent_logo_light"),
+        pl.col("primary_color").alias("opponent_primary_color"),
+    ])
+
+    # Opponent rank and Weighted Win % (0-100 whole number, rounded half up,
+    # matching the table)
+    opponent_stats = power_digits.select([
+        pl.col("team_id").alias("opponent_id"),
+        pl.col("power_digits_overall_rank").alias("opponent_rank"),
+        (pl.col("twwp") * 100 + 0.5)
+        .floor()
+        .cast(pl.Int64)
+        .alias("opponent_weighted_win_pct"),
+    ])
+
+    # Every team's record this season (FCS teams included)
+    opponent_records = team_records.select([
+        pl.col("team_id").alias("opponent_id"),
+        pl.col("record").alias("opponent_record"),
+    ])
+
+    best_3 = best_3_games.select([
+        "team_id",
+        "game_id",
+        pl.lit(True).alias("best_3"),
+    ])
+
+    games = (
+        game_weights
+        .join(opponent_info, on="opponent_id", how="left")
+        .join(opponent_stats, on="opponent_id", how="left")
+        .join(opponent_records, on="opponent_id", how="left")
+        .join(best_3, on=["team_id", "game_id"], how="left")
+        .with_columns([
+            pl.coalesce(["opponent_logo_dark", "opponent_logo_light"])
+            .alias("opponent_logo"),
+            pl.coalesce(["opponent_short", "opponent"])
+            .alias("opponent_name"),
+            (pl.col("opponent_classification") == "fcs")
+            .fill_null(False)
+            .alias("opponent_fcs"),
+            # the weighted win or loss this game produced
+            pl.when(pl.col("result") == "W")
+            .then(pl.col("weighted_win"))
+            .when(pl.col("result") == "L")
+            .then(pl.col("weighted_loss"))
+            .otherwise(None)
+            .round(2)
+            .alias("value"),
+            pl.col("best_3").fill_null(False),
+        ])
+        .sort(["team_id", "start_date"])
+    )
+
+    game_lists = {}
+
+    for row in games.iter_rows(named=True):
+        fcs = row["opponent_fcs"]
+        game_lists.setdefault(row["team_id"], []).append({
+            "week": row["week"],
+            "season_type": row["season_type"],
+            "start_date": row["start_date"],
+            "opponent_id": row["opponent_id"],
+            "opponent": row["opponent_name"],
+            "opponent_rank": None if fcs else row["opponent_rank"],
+            "opponent_fcs": fcs,
+            "opponent_logo": row["opponent_logo"],
+            "opponent_primary_color": row["opponent_primary_color"],
+            "opponent_weighted_win_pct": None if fcs else row["opponent_weighted_win_pct"],
+            "opponent_record": row["opponent_record"],
+            "location": row["location"],
+            "result": row["result"],
+            "value": row["value"],
+            "best_3": row["best_3"],
+        })
+
+    return game_lists
 
 
 def main():
@@ -316,7 +417,20 @@ def main():
 
     rankings = rankings.sort("rank")
 
+    # Per-game lists for the website pop-ups
+    # (must run before `records` is replaced by the final list below)
+    game_lists = build_game_lists(
+        game_weights=load_parquet(game_weights_path),
+        power_digits=power_digits,
+        aesthetics=aesthetics,
+        best_3_games=load_parquet(best_3_games_path),
+        team_records=records,
+    )
+
     records = rankings.to_dicts()
+
+    for record in records:
+        record["games"] = game_lists.get(record["team_id"], [])
 
     output_path.parent.mkdir(
         parents=True,

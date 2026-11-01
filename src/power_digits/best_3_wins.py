@@ -18,7 +18,7 @@ TEAM_WEIGHTED_WIN_PCT_FILE = (
 
 OUTPUT_DIR = ROOT / "data" / "processed" / "best_3_wins"
 OUTPUT_FILE = OUTPUT_DIR / f"best_3_wins_{SEASON}.parquet"
-
+BEST_3_GAMES_FILE = OUTPUT_DIR / f"best_3_wins_games_{SEASON}.parquet"
 
 def main():
     team_games = pl.read_parquet(TEAM_GAMES_FILE)
@@ -86,6 +86,13 @@ def main():
     # Keep only the three best wins.
     best_three = games.filter(
         pl.col("win_rank") <= 3
+    )
+
+    
+    # Save the games behind each team's Best 3 Wins (for the website pop-up).
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    best_three.select(["team_id", "game_id", "win_rank"]).write_parquet(
+        BEST_3_GAMES_FILE
     )
 
     # ------------------------------------------------------------------

@@ -23,7 +23,8 @@ CONFERENCE_STRENGTH_FILE = (
 
 OUTPUT_DIR = ROOT / "data" / "processed" / "team_weighted_win_pct"
 OUTPUT_FILE = OUTPUT_DIR / f"team_weighted_win_pct_{SEASON}.parquet"
-
+GAME_WEIGHTS_DIR = ROOT / "data" / "processed" / "team_game_weights"
+GAME_WEIGHTS_FILE = GAME_WEIGHTS_DIR / f"team_game_weights_{SEASON}.parquet"
 
 def main():
     # ------------------------------------------------------------
@@ -155,6 +156,24 @@ def main():
             .alias("weighted_loss"),
         ]
     )
+
+    # Save each game's weight so the website pop-ups can show it.
+    GAME_WEIGHTS_DIR.mkdir(parents=True, exist_ok=True)
+    games.select([
+        "game_id",
+        "week",
+        "season_type",
+        "start_date",
+        "team_id",
+        "opponent_id",
+        "opponent",
+        "opponent_classification",
+        "location",
+        "result",
+        "weighted_win",
+        "weighted_loss",
+    ]).write_parquet(GAME_WEIGHTS_FILE)
+
 
     # ------------------------------------------------------------
     # Aggregate by team.
