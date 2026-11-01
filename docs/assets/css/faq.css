@@ -1,0 +1,164 @@
+/* =========================================================
+   Power Digits - Math & FAQ page
+   ========================================================= */
+
+.faq-page {
+  max-width: 820px;               /* comfortable line length for reading */
+  color: #e8e2d2;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.faq-title {
+  margin: 0.5rem 0 1rem;
+  font-family: var(--pd-display-font);
+  font-size: 2.2rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.9));
+}
+
+#faq {
+  margin-top: 3rem;
+}
+
+/* Each block of the Math section sits on a dark, slightly see-through panel */
+.faq-section {
+  margin-bottom: 1rem;
+  padding: 1.1rem 1.4rem;
+  background: rgba(30, 30, 30, 0.88);
+  border-left: 3px solid var(--pd-gold);
+  border-radius: 4px;
+}
+
+.faq-section h2 {
+  margin: 0 0 0.5rem;
+  color: var(--pd-gold-text);
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.faq-section p {
+  margin: 0 0 0.75rem;
+}
+
+.faq-section p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-page strong {
+  color: var(--pd-white);
+}
+
+.faq-page a {
+  color: var(--pd-gold-text);
+}
+
+.note {
+  color: #b9b3a3;
+  font-size: 0.9rem;
+}
+
+/* ---------- Component weights table ---------- */
+
+.weights {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.weights th {
+  padding: 0.4rem 0.5rem;
+  color: var(--pd-gold-text);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.weights td {
+  padding: 0.45rem 0.5rem;
+  border-bottom: 1px solid #333333;
+}
+
+.weights td:nth-child(2) {
+  color: var(--pd-gold-text);
+  white-space: nowrap;
+}
+
+.formula {
+  margin-top: 0.9rem !important;
+  color: #b9b3a3;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ---------- FAQ questions (click to open) ---------- */
+
+.faq-list details {
+  margin-bottom: 0.5rem;
+  background: rgba(30, 30, 30, 0.88);
+  border-radius: 4px;
+  border-left: 3px solid transparent;
+}
+
+.faq-list details[open] {
+  border-left-color: var(--pd-gold);
+}
+
+.faq-list summary {
+  position: relative;
+  padding: 0.8rem 2.5rem 0.8rem 1.2rem;
+  color: var(--pd-white);
+  cursor: pointer;
+  list-style: none;              /* hide the default triangle */
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+/* plus / minus sign on the right */
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--pd-gold-text);
+  font-size: 1.3rem;
+}
+
+.faq-list details[open] summary::after {
+  content: "\2212";   /* minus sign */
+}
+
+.faq-list summary:hover {
+  color: var(--pd-gold-text);
+}
+
+.faq-list details p {
+  margin: 0;
+  padding: 0 1.2rem 0.9rem;
+}
+
+.faq-list details p + p {
+  padding-top: 0.2rem;
+}
+
+@media (max-width: 599px) {
+  .faq-page {
+    font-size: 0.95rem;
+  }
+
+  .faq-title {
+    font-size: 1.8rem;
+  }
+
+  .faq-section {
+    padding: 0.9rem 1rem;
+  }
+}

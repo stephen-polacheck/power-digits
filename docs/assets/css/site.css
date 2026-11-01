@@ -200,3 +200,30 @@ body::before {
   margin: 0 auto;
   padding: 2rem 1rem 3rem;
 }
+
+/* Page heading + intro line (used on the rankings page) */
+.page-title {
+  margin: 0 0 0.4rem;
+  font-family: var(--pd-display-font);
+  font-size: 1.9rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.9));
+}
+
+.page-intro {
+  max-width: 46rem;
+  margin: 0 auto 1.25rem;
+  color: #d9d3c3;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* No bold text anywhere on the site */
+*,
+*::before,
+*::after {
+  font-weight: 400 !important;
+}

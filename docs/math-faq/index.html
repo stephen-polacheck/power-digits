@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How the Rankings Work: College Football Math &amp; FAQ | Power Digits</title>
+  <meta name="description" content="The math behind the Power Digits college football computer rankings: weighted wins and losses, strength of schedule, conference strength, and answers to common questions.">
+  <link rel="canonical" href="https://www.powerdigitsfootball.com/math-faq/">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/css/faq.css">
+</head>
+<!-- data-root = path from this page back to the docs/ folder -->
+<body data-root="../">
+
+  <main class="page faq-page">
+
+    <h1 class="faq-title metal-text">The Math</h1>
+
+    <section class="faq-section">
+      <p>
+        Power Digits is a completely unbiased, mathematical way of ranking college football teams.
+        Its goal isn't to predict who will win future games &mdash; it's to determine who has the
+        best résumé for the College Football Playoff.
+      </p>
+      <p>
+        There is no <em>right</em> way to rank college football teams. This is simply one way to do
+        it &mdash; one that will sometimes agree with the pollsters and the CFP Committee, and often won't.
+      </p>
+      <p>
+        Every FBS team receives a <strong>Power Digits Rating</strong> between 0 and 100, which
+        determines its rank. 100 is the best possible rating; 0 is the worst.
+      </p>
+    </section>
+
+    <section class="faq-section">
+      <h2>The five components</h2>
+      <table class="weights">
+        <thead>
+          <tr><th>Component</th><th>Weight</th><th>What it measures</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Team W-L Rating</td><td>55%</td><td>The team's own weighted wins and losses</td></tr>
+          <tr><td>Strength of Schedule</td><td>25%</td><td>The weighted records of every opponent played</td></tr>
+          <tr><td>Top 3 Wins</td><td>10%</td><td>The ratings of the three best teams beaten</td></tr>
+          <tr><td>Strength of Wins</td><td>5%</td><td>The combined rating of the teams beaten</td></tr>
+          <tr><td>Strength of Losses</td><td>5%</td><td>The combined rating of the teams lost to</td></tr>
+        </tbody>
+      </table>
+      <p class="formula">
+        Power Digits = 100 &times; (0.55 &times; W-L Rating + 0.25 &times; Schedule + 0.10 &times; Top 3 Wins
+        + 0.05 &times; Wins + 0.05 &times; Losses)
+      </p>
+    </section>
+
+    <section class="faq-section">
+      <h2>Team W-L Rating (55%)</h2>
+      <p>
+        The base of the algorithm is a weighted win percentage. Instead of every win or loss counting
+        as exactly 1, each one counts for a little more or a little less depending on the strength of
+        the opponent's conference and where the game was played.
+      </p>
+      <p>
+        <strong>Conference strength</strong> comes from how each conference has done in non-conference
+        FBS games over the last three seasons plus the current one (for 2026, that's 2023&ndash;2026),
+        counting every team in the conference it plays in <em>this</em> season. Records against teams
+        at the same level (Power 4 vs. Power 4, Group of 5 vs. Group of 5) count for 40%, and records
+        across levels count for 60%. Regular-season games count fully, bowl games count a quarter as
+        much, and College Football Playoff games count ten times as much. A conference's base value
+        is its strength plus 0.5.
+      </p>
+      <p>
+        That base value is what a neutral-site win over a team from that conference is worth. A road
+        win adds 0.03 and a home win subtracts 0.03 &mdash; it's harder to win on the road in college football!
+      </p>
+      <p>
+        A loss is worth 1 divided by the base value, again adjusted by 0.03 for location: a home loss
+        costs a little more and a road loss a little less.
+      </p>
+      <p>
+        Games against FCS teams count as half a win (0.5) or one and a half losses (1.5).
+      </p>
+    </section>
+
+    <section class="faq-section">
+      <h2>Strength of Schedule (25%)</h2>
+      <p>
+        The same weighted win/loss formula, applied to the results of every opponent &mdash; in their
+        games against everyone <em>except</em> the team being rated. Teams benefit when their
+        opponents go on to win games.
+      </p>
+      <p class="note">
+        Opponents only count once the game has been played. A late-season rivalry game against a
+        juggernaut isn't part of the résumé yet.
+      </p>
+    </section>
+
+    <section class="faq-section">
+      <h2>Top 3 Wins (10%)</h2>
+      <p>
+        The average W-L Rating of the three best FBS teams beaten. This rewards teams that have beaten
+        several strong opponents, rather than teams carried by playing (and losing to) tough schedules.
+        The average is always taken over three, so a team with fewer than three FBS wins is held back.
+      </p>
+    </section>
+
+    <section class="faq-section">
+      <h2>Strength of Wins &amp; Strength of Losses (5% each)</h2>
+      <p>
+        Strength of Wins is the combined W-L Rating of the teams beaten; a winless team receives a 0.
+        Strength of Losses is the combined W-L Rating of the teams lost to; an undefeated team
+        receives a perfect score.
+      </p>
+    </section>
+
+    <section class="faq-section">
+      <p>
+        These ratings aren't meant to say "Team X is better than Team Y." They say "Team X deserves a
+        playoff spot before Team Y does." In short, the best outcome for a team is to win games (of
+        course) &mdash; and then hope its opponents go on to win games too.
+      </p>
+      <p>
+        In the early weeks the algorithm has very few results to compare teams on. By the end of the
+        season there are 12 results for each team and roughly 130 opponent results to measure how
+        strong a team really is.
+      </p>
+    </section>
+
+    <h1 class="faq-title metal-text" id="faq">FAQ</h1>
+
+    <div class="faq-list">
+
+      <details>
+        <summary>Why do the rankings look so "wrong" for the first few weeks?</summary>
+        <p>
+          The rankings only learn from game results, so they improve with every game played. In
+          week 1, the algorithm may only know that Maryland beat Eastern Michigan. By weeks 2, 3 and 4,
+          as both teams play other opponents, it learns how good Eastern Michigan really is &mdash; and
+          as Eastern Michigan wins games, Maryland's rating gets a bump. By week 12, Maryland has ten
+          opponents, each with their own ten results.
+        </p>
+      </details>
+
+      <details>
+        <summary>If we know Alabama is better than Akron, why do they start with no advantage?</summary>
+        <p>
+          Fans may think they know Alabama will be better than Akron, but it has to be proven on the
+          field. The rankings use only the current season's results, so there are no preconceived biases.
+        </p>
+        <p>
+          College football is volatile. Michigan State went 12-2 with a playoff appearance in 2015,
+          then 3-9 in 2016 &mdash; and that was before the transfer portal and today's coaching
+          carousel. Power Digits gives no credit or penalty for previous seasons; every year starts
+          with a blank slate. Do we really know Alabama is better than Akron, or are we just assuming?
+        </p>
+      </details>
+
+      <details>
+        <summary>Does margin of victory matter?</summary>
+        <p>
+          No. A win is a win, whether it's by 1 point or 50. Only the result, the location and the
+          strength of the opponent count. Points are not 1-to-1 in games, every gameday comes with it's own challenges and situations, your job as a team is to win that day.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can conference strength work when conferences change so much?</summary>
+        <p>
+          Conference strength uses the non-conference results of the teams <em>currently</em> in each
+          conference, going back three seasons. Texas's past results count for the SEC, Cincinnati's
+          count for the Big 12, and so on.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do teams that go undefeated against easy opponents get ranked higher?</summary>
+        <p>
+          No. Strength of Schedule carries a lot of weight, and the strength of the teams beaten even
+          more. An undefeated team does benefit from its record, but 45% of its rating is held back
+          by weak opponents.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do Group of 5 teams benefit from Power Digits?</summary>
+        <p>
+          No &mdash; they actually have it harder, because their conference games hurt their weighted
+          records. A win over another Group of 5 team is worth less than one win, and a loss is worth
+          more than one loss. An undefeated Group of 5 team can climb near the top, but after a loss
+          they rarely crack the top 10. With a usually low strength of schedule, they need an almost
+          flawless season.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do these compare to the AP Poll and the CFP rankings?</summary>
+        <p>
+          Power Digits is an independent ranking and should be seen as something different from the
+          AP Poll and the College Football Playoff committee's rankings. There is no 100% accurate way
+          to rank teams unless they all played each other. Power Digits is a bias-free, alternate way
+          to rank them.
+        </p>
+      </details>
+
+      <details>
+        <summary>Is scheduling the worst Power 4 teams the best way to beat the algorithm?</summary>
+        <p>
+          To a point, yes. A road win at a struggling Power 4 team credits your W-L Rating the same as
+          a road win at a powerhouse from the same conference. But the difference shows up in Strength
+          of Schedule, Strength of Wins and Top 3 Wins, where a strong opponent's success boosts your
+          rating and a weak opponent's struggles drag it down.
+        </p>
+      </details>
+
+      <details>
+        <summary>Why do undefeated teams get such a boost?</summary>
+        <p>
+          They're undefeated. If nobody they played could beat them, they should be rewarded. Until a
+          team loses, we can only guess how good it truly is.
+        </p>
+      </details>
+
+      <details>
+        <summary>How are FBS independents classified?</summary>
+        <p>
+          Independents are grouped with the conference they're most closely tied to, or their previous
+          conference: Notre Dame with the ACC and UConn with the American. Independents never receive
+          a conference's automatic bid in the playoff brackets.
+        </p>
+      </details>
+
+      <details>
+        <summary>Two teams who played each other are ranked next to each other. Why is the loser higher?</summary>
+        <p>
+          Across all the parts of the rating, those two teams happened to land side by side. Power
+          Digits ranks résumés, not who-beat-who. Swapping teams for head-to-head results can create a
+          never-ending loop, so it's never implemented.
+        </p>
+      </details>
+
+      <details>
+        <summary>How is this different from the old BCS computer rankings?</summary>
+        <p>
+          Like the computer rankings used in the BCS era, Power Digits is purely mathematical and ignores
+          margin of victory and preseason expectations. Unlike the BCS, there's no human poll blended in
+          &mdash; and the equations is replicatable & intentionally simple.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do games against FCS teams count?</summary>
+        <p>
+          A win over an FCS team counts as half a win (0.5), and a loss to one counts as one and a half
+          losses (1.5). For Strength of Schedule, an FCS opponent counts as if it were the lowest-rated
+          FBS team.
+        </p>
+      </details>
+
+      <details>
+        <summary>How often are the rankings updated?</summary>
+        <p>
+          Every morning during the season, automatically, using the latest game results from
+          <a href="https://collegefootballdata.com" target="_blank" rel="noopener">CollegeFootballData.com</a>.
+        </p>
+      </details>
+
+      <details>
+        <summary>What do the green and red numbers on the rankings page mean?</summary>
+        <p>
+          In each stat column, green marks the top 20 teams in that stat and red marks the bottom 20.
+          Hover over (or tap) a number to see the games behind it.
+        </p>
+      </details>
+
+      <details>
+        <summary>What are the Playoff Formats?</summary>
+        <p>
+          They show what the College Football Playoff would look like if it started today, using
+          Power Digits to pick and seed the field &mdash; for the current 12-team format and for
+          alternatives with 4, 8, 20, 24 and 32 teams. Each bracket explains its own selection rules.
+        </p>
+      </details>
+
+    </div>
+  </main>
+
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

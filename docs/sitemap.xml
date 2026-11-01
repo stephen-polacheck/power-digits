@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.powerdigitsfootball.com/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.powerdigitsfootball.com/currentrankings/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.powerdigitsfootball.com/playoffs/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.powerdigitsfootball.com/math-faq/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>

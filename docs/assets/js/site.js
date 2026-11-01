@@ -7,7 +7,7 @@ const NAV_LINKS = [
   // path is relative to the docs/ folder
   { label: "Current Rankings", path: "currentrankings/" },
   { label: "Playoff Formats", path: "playoffs/" },
-  // { label: "Math & FAQ", path: "math-faq/" },   <- turn on once that page exists
+  { label: "Math & FAQ", path: "math-faq/" },
   { label: "X", url: "https://x.com/PowerDigits" },
   { label: "Instagram", url: "https://www.instagram.com/powerdigits" },
 ];
