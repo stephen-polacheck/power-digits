@@ -1,0 +1,84 @@
+# Refreshes the Power Digits rankings every morning during the season:
+# pulls new CFBD data, runs the full pipeline, and commits the updated
+# files. GitHub Pages then republishes the website automatically.
+#
+# The CFBD API key comes from the repository secret CFBD_API_KEY
+# (Settings > Secrets and variables > Actions). GitHub hides secret
+# values in the run logs, and the key is never written to any file.
+
+name: Refresh rankings
+
+on:
+  schedule:
+    # 9:00 AM Eastern (daylight saving handled automatically), Aug 15 - Dec 14
+    - cron: "0 9 15-31 8 *"     # Aug 15-31
+      timezone: "America/New_York"
+    - cron: "0 9 * 9-11 *"      # every day in Sep, Oct, Nov
+      timezone: "America/New_York"
+    - cron: "0 9 1-14 12 *"     # Dec 1-14
+      timezone: "America/New_York"
+
+  # Adds a "Run workflow" button on the Actions tab for manual runs
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season to run (leave blank for the current year)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write   # needed to commit the refreshed data
+
+concurrency:
+  group: refresh-rankings
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Make sure no secrets file is committed
+        run: |
+          if git ls-files --error-unmatch .env > /dev/null 2>&1; then
+            echo "::error::.env is tracked by git. Run 'git rm --cached .env' locally, commit, and push."
+            exit 1
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Pick the season
+        env:
+          INPUT_SEASON: ${{ github.event.inputs.season }}
+        run: |
+          SEASON="${INPUT_SEASON:-$(TZ=America/New_York date +%Y)}"
+          echo "SEASON=$SEASON" >> "$GITHUB_ENV"
+          echo "Running season $SEASON"
+
+      - name: Run Power Digits pipeline
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python run_pipeline.py "$SEASON"
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898532+github-actions[bot]@users.noreply.github.com"
+          git add data docs/data
+          if git diff --cached --quiet; then
+            echo "No changes since the last run."
+          else
+            git commit -m "Refresh $SEASON rankings ($(TZ=America/New_York date +%Y-%m-%d))"
+            git push
+          fi
