@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/docs/assets/css/site.css">
+  <link rel="stylesheet" href="/docs/assets/css/playoffs.css">
+  <link rel="stylesheet" href="/src/graphics/templates/graphics.css">
+</head>
+<!-- data-root tells the website's playoffs.js where docs/data lives -->
+<body class="graphic bracket" data-root="/docs/">
+  <div class="g-wrap">
+    <header class="g-header">
+      <div id="g-title" class="g-title metal-text"></div>
+    </header>
+
+    <!-- the same elements the website's playoff page uses -->
+    <nav id="format-tabs"></nav>
+    <h1 id="bracket-title"></h1>
+    <div id="bracket-area" class="bracket-area">
+      <p id="status" class="status"></p>
+    </div>
+    <p id="bracket-note" class="bracket-note"></p>
+
+    <footer class="g-footer">
+      <span>Game data via CollegeFootballData.com</span>
+      <span class="handle">PowerDigitsFootball.com &middot; @PowerDigits</span>
+    </footer>
+  </div>
+
+  <script src="/docs/assets/js/playoffs.js"></script>
+  <script>
+    // Draw the requested format once the website's script has loaded the data
+    (async () => {
+      const params = new URLSearchParams(window.location.search);
+      const format = params.get("format") || "12";
+      const week = params.get("week") || "";
+
+      while (typeof playoffData === "undefined" || playoffData === null) {
+        await new Promise((r) => setTimeout(r, 50));
+      }
+      const entry = playoffData.formats[format];
+      document.getElementById("g-title").textContent =
+        `POWER DIGITS ${entry.name.toUpperCase()} \u00b7 ${week}`;
+
+      drawBracket(format);
+
+      // In the graphic, let the bracket grow to fill all the free space
+      // (the website never enlarges it past its design size)
+      const area = document.getElementById("bracket-area");
+      const stage = area.querySelector(".bracket-stage");
+      const bracket = area.querySelector(".bracket");
+      if (stage && bracket) {
+        const w = parseFloat(bracket.style.width);
+        const h = parseFloat(bracket.style.height);
+        const scale = Math.min(area.clientWidth / w, area.clientHeight / h);
+        bracket.style.transform = `scale(${scale})`;
+        stage.style.width = w * scale + "px";
+        stage.style.height = h * scale + "px";
+      }
+      await Promise.all([...document.images].map((img) =>
+        img.complete ? null : new Promise((r) => { img.onload = r; img.onerror = r; })));
+      await document.fonts.ready;
+      window.graphicReady = true;
+    })();
+  </script>
+</body>
+</html>

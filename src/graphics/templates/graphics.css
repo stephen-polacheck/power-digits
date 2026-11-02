@@ -1,0 +1,476 @@
+/* =========================================================
+   Power Digits - social graphics
+   Loaded after the website's site.css, so it shares the same
+   colors, metallic gold, background pattern and Quantify font.
+   Each graphic is a fixed-size page that gets saved as a PNG.
+   ========================================================= */
+
+body.graphic {
+  width: var(--w);
+  height: var(--h);
+  margin: 0;
+  overflow: hidden;
+}
+
+/* sizes (in "design pixels"; images are saved at 2x) */
+body.top30   { --w: 1080px; --h: 1080px; }
+body.top138  { --w: 1080px; --h: 1620px; }
+body.games   { --w: 1080px; --h: 1350px; }
+body.bracket { --w: 1600px; --h: 900px; }
+
+.g-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 34px 40px 22px;
+}
+
+/* ---------- Header ---------- */
+
+.g-header {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.g-title {
+  font-family: var(--pd-display-font);
+  font-weight: 400;
+  font-size: 78px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.95)) drop-shadow(0 6px 18px rgba(0, 0, 0, 0.9));
+}
+
+.g-subtitle {
+  margin-top: 10px;
+  color: var(--pd-white);
+  font-size: 25px;
+  letter-spacing: 0.03em;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.95), 0 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+.g-rule {
+  width: 62%;
+  height: 3px;
+  margin: 16px auto 0;
+  background: var(--pd-gold-metal);
+}
+
+/* ---------- Footer ---------- */
+
+.g-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 12px;
+  color: #a9a395;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.g-footer .handle {
+  color: var(--pd-white);
+  font-size: 19px;
+  text-align: right;
+}
+
+/* ---------- Shared slanted shapes ---------- */
+
+.g-plate,
+.g-stripe {
+  flex-shrink: 0;
+  transform: skewX(-20deg);
+}
+
+.g-stripe { margin-left: -1px; }
+.g-stripe.thick { width: var(--thick, 12px); }
+.g-stripe.thin { width: var(--thin, 5px); }
+.g-stripe.thin-p { width: var(--thin-p, 8px); }
+.g-stripe.primary { background: var(--primary); }
+.g-stripe.secondary { background: var(--secondary); }
+
+.g-plate { background: var(--primary); }
+
+.g-unskew {
+  transform: skewX(20deg);
+}
+
+/* =========================================================
+   TOP 30 (square)
+   ========================================================= */
+
+.t30-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 24px 26px;
+  flex: 1;
+  padding: 10px 10px 0 18px;
+}
+
+.t30-tile {
+  position: relative;
+  display: flex;
+  --skew: 20deg;            /* Top 30 leans the opposite way to the other graphics */
+  --thick: 13px;
+  --thin: 5px;
+  --thin-p: 8px;
+}
+
+.t30-tile .g-plate,
+.t30-tile .g-stripe {
+  transform: skewX(var(--skew));
+}
+
+.t30-tile .g-unskew {
+  transform: skewX(calc(var(--skew) * -1));
+}
+
+.t30-tile .g-plate {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logos fit inside this box: wide logos are limited by the width,
+   square and tall logos by the height, so none of them get too big */
+.t30-tile img {
+  width: 82px;
+  height: 66px;
+  object-fit: contain;
+}
+
+/* big gold rank overlapping the top-left corner */
+.t30-rank {
+  position: absolute;
+  left: -2px;
+  top: -16px;
+  font-family: var(--pd-display-font);
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 1;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.95)) drop-shadow(0 3px 8px rgba(0, 0, 0, 0.8));
+}
+
+/* =========================================================
+   TOP 138 (tall)
+   ========================================================= */
+
+.t138-section-label {
+  margin: 0 0 10px;
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  text-align: center;
+}
+
+/* top 30: three columns of full rows, reading down each column */
+.t138-top {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 46px);
+  gap: 6px 26px;
+  margin-bottom: 30px;
+  --thick: 10px;
+  --thin: 4px;
+  --thin-p: 6px;
+}
+
+.t138-row {
+  display: flex;
+  height: 46px;
+  --row-bg: #2e2e2e;
+}
+
+.t138-row .g-plate {
+  width: 214px;
+  margin-left: 9px;
+  display: flex;
+  align-items: center;
+}
+
+.t138-row .g-plate .g-unskew {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 6px 0 2px;
+}
+
+.t138-rank {
+  width: 32px;
+  flex-shrink: 0;
+  text-align: center;
+  color: var(--pd-white);
+  font-family: var(--pd-display-font);
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.t138-row img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.t138-name {
+  color: var(--pd-white);
+  font-family: var(--pd-display-font);
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* dark area holding the Power Digits value */
+.t138-value {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -9px;
+  background: var(--row-bg);
+  clip-path: polygon(17px 0, 100% 0, calc(100% - 17px) 100%, 0 100%);
+  color: var(--pd-white);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+/* 31-138: six compact columns, reading down each column */
+.t138-rest {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  gap: 4px 14px;
+  flex: 1;
+  min-height: 0;
+}
+
+.t138-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.t138-mini .rank {
+  width: 36px;
+  text-align: right;
+  font-family: var(--pd-display-font);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.t138-chip {
+  width: 44px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t138-chip img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.t138-mini .value {
+  color: #e8e2d2;
+  font-size: 17px;
+}
+
+/* =========================================================
+   BRACKETS (wide) - the bracket itself uses the website's
+   playoffs.css and playoffs.js
+   ========================================================= */
+
+body.bracket .g-wrap {
+  padding: 26px 40px 18px;
+}
+
+body.bracket .g-header {
+  margin-bottom: 18px;
+}
+
+body.bracket .g-title {
+  font-size: 52px;
+}
+
+body.bracket .g-subtitle {
+  font-size: 22px;
+}
+
+/* the bracket fills the space between header and description */
+body.bracket #bracket-area {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.bracket .bracket-stage {
+  margin: 0;
+}
+
+/* parts of the website page the graphic doesn't need */
+body.bracket #format-tabs,
+body.bracket #bracket-title {
+  display: none;
+}
+
+body.bracket .bracket-note {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+/* =========================================================
+   HIGH LEVERAGE (square): 8 games, 2 per row, highest leverage
+   at the top. Each team is one slanted box: helmet on the outer
+   side, school name (secondary color) next to the line between
+   the two teams, and the big gold rank on the point in the middle.
+   ========================================================= */
+
+body.leverage { --w: 1080px; --h: 1080px; }
+
+body.leverage .g-wrap { padding: 28px 22px 18px; }
+body.leverage .g-header { margin-bottom: 22px; }
+body.leverage .g-title { font-size: 44px; }
+body.leverage .g-rule { width: 70%; margin-top: 12px; background: var(--pd-white); }
+
+.hl-grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  align-content: space-between;
+  column-gap: 120px;          /* space in the middle, between the two columns */
+}
+
+.hl-game {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hl-team {
+  position: relative;
+  height: 102px;
+  display: flex;
+  --skew: 20deg;              /* left column: top box "\", bottom box "/" -> ">" */
+  --rank-size: 60px;
+  /* helmet: image height = 340% of the box (the box shows about the 22%-51%
+     band of the image), pushed against the outer edge with the very back trimmed */
+  --helmet-zoom: 340%;
+  --helmet-y: 31%;
+  --helmet-x: -34px;
+}
+
+.hl-team.home { --skew: -20deg; }
+.hl-right .hl-team { flex-direction: row-reverse; --skew: -20deg; }
+.hl-right .hl-team.home { --skew: 20deg; }
+
+.hl-plate {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: var(--primary);
+  transform: skewX(var(--skew));
+}
+
+/* un-slanted content, wider than the plate so the slant trims it */
+.hl-inner {
+  position: absolute;
+  inset: 0 -50px;
+  transform: skewX(calc(var(--skew) * -1));
+}
+
+/* depth: faint geometric facets, so the box isn't a flat block of color */
+.hl-texture {
+  position: absolute;
+  inset: 0;
+  background: url("facets.svg") center / 100% 100% no-repeat;
+}
+
+/* the secondary-color line on the outside edge (top of the road box, bottom of the home box) */
+.hl-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--secondary);
+}
+
+.hl-team.away .hl-line { top: 0; }
+.hl-team.home .hl-line { bottom: 0; }
+
+.hl-helmet {
+  position: absolute;
+  inset: 3px 0;
+  background-image: var(--helmet);
+  background-repeat: no-repeat;
+  background-size: auto var(--helmet-zoom);
+  background-position: calc(50px + var(--helmet-x)) var(--helmet-y);
+}
+
+.hl-right .hl-helmet {
+  background-position: right calc(50px + var(--helmet-x)) top var(--helmet-y);
+}
+
+/* no helmet yet: show the dark logo, whole, on the outer side */
+.hl-helmet.logo-only {
+  background-size: auto 74%;
+  background-position: calc(50px + 70px) 50%;
+}
+
+.hl-right .hl-helmet.logo-only {
+  background-position: right calc(50px + 70px) center;
+}
+
+/* school name in the secondary color, next to the line between the two teams */
+.hl-name {
+  position: absolute;
+  right: 64px;                /* 50px of overhang + a little padding from the point */
+  color: var(--name-color);
+  font-family: var(--pd-display-font);
+  font-weight: 400;
+  font-size: 28px;              /* long names are shrunk to fit max-width (graphics.js) */
+  max-width: 250px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hl-team.away .hl-name { bottom: 9px; }
+.hl-team.home .hl-name { top: 9px; }
+.hl-right .hl-name { right: auto; left: 64px; }
+
+/* big gold rank on the point in the middle */
+.hl-rank {
+  position: absolute;
+  z-index: 2;
+  width: 84px;
+  text-align: center;
+  font-family: var(--pd-display-font);
+  font-weight: 400;
+  font-size: var(--rank-size);
+  line-height: 1;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.95)) drop-shadow(0 3px 8px rgba(0, 0, 0, 0.8));
+}
+
+/* road rank sits high, home rank sits low, away from the names by the middle line */
+.hl-team.away .hl-rank { top: 2px; }
+.hl-team.home .hl-rank { bottom: 0; }
+.hl-left .hl-rank { right: -50px; }
+.hl-right .hl-rank { left: -50px; }

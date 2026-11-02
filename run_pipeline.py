@@ -22,6 +22,7 @@ PIPELINE = [
     ("Validate results", "src/validation/validate_season.py"),
     ("Build website rankings", "src/website/build_rankings.py"),
     ("Build playoff brackets", "src/website/build_playoffs.py"),
+    ("Build upcoming games", "src/website/build_upcoming.py"),
 ]
 
 

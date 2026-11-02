@@ -20,7 +20,7 @@ body.home::before {
   align-items: center;       /* vertical position of the button */
   justify-content: center;   /* horizontal position of the button */
   padding: 2rem 1rem;
-  background: url("../img/HomePage.jpg") center / cover no-repeat;
+  background: url("../img/homepage.jpg") center / cover no-repeat;
 }
 
 /* Title, tagline and byline stacked above the button */

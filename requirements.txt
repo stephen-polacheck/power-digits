@@ -1,8 +1,12 @@
 ﻿certifi==2026.7.22
 charset-normalizer==3.5.1
+greenlet==3.5.6
 idna==3.19
+playwright==1.64.1
 polars==1.44.2
 polars-runtime-32==1.44.2
+pyee==14.0.0
 python-dotenv==1.2.3
 requests==2.34.2
+typing_extensions==4.16.0
 urllib3==2.7.0
