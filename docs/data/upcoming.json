@@ -159,7 +159,7 @@
         "helmet_url": "Oregon.png"
       },
       "home": {
-        "rank": 9,
+        "rank": 8,
         "team_id": 194,
         "school_name": "Ohio State",
         "school_short": "Ohio State",
@@ -248,7 +248,7 @@
       "g5_game": true,
       "leverage": 43.1,
       "away": {
-        "rank": 80,
+        "rank": 81,
         "team_id": 326,
         "school_name": "Texas State",
         "school_short": "Texas State",
