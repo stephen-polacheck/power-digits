@@ -9,16 +9,13 @@
 name: Refresh rankings
 
 on:
-  schedule:
-    # 7:13 AM Eastern (daylight saving handled automatically), Aug 15 - Dec 14.
-    # Minute 17 instead of :00 - GitHub's busiest moment is the top of the hour,
-    # and runs scheduled then can be delayed for hours.
-    - cron: "17 7 15-31 8 *"    # Aug 15-31
-      timezone: "America/New_York"
-    - cron: "17 7 * 9-11 *"     # every day in Sep, Oct, Nov
-      timezone: "America/New_York"
-    - cron: "17 7 1-14 12 *"    # Dec 1-14
-      timezone: "America/New_York"
+    schedule:
+    # Times are UTC (GitHub's default). Eastern = UTC-4 until early November,
+    # then UTC-5, so the entries are split to land near 7:17 AM Eastern all season.
+    - cron: "17 11 15-31 8 *"    # Aug 15-31      -> 7:17 AM EDT
+    - cron: "17 11 * 9-10 *"     # Sep, Oct       -> 7:17 AM EDT
+    - cron: "17 12 * 11 *"       # Nov            -> 7:17 AM EST (8:17 for the first few days of Nov, before the clocks change)
+    - cron: "17 12 1-14 12 *"    # Dec 1-14       -> 7:17 AM EST
 
   # Adds a "Run workflow" button on the Actions tab for manual runs
   workflow_dispatch:
