@@ -9,13 +9,13 @@
 name: Refresh rankings
 
 on:
-    schedule:
+  schedule:
     # Times are UTC (GitHub's default). Eastern = UTC-4 until early November,
     # then UTC-5, so the entries are split to land near 7:17 AM Eastern all season.
-    - cron: "17 11 15-31 8 *"    # Aug 15-31      -> 7:17 AM EDT
-    - cron: "17 11 * 9-10 *"     # Sep, Oct       -> 7:17 AM EDT
-    - cron: "17 12 * 11 *"       # Nov            -> 7:17 AM EST (8:17 for the first few days of Nov, before the clocks change)
-    - cron: "17 12 1-14 12 *"    # Dec 1-14       -> 7:17 AM EST
+    - cron: "17 11 15-31 8 *"    # Aug 15-31  -> 7:17 AM EDT
+    - cron: "17 11 * 9-10 *"     # Sep, Oct   -> 7:17 AM EDT
+    - cron: "17 12 * 11 *"       # Nov        -> 7:17 AM EST (8:17 the first few days, before clocks change)
+    - cron: "17 12 1-14 12 *"    # Dec 1-14   -> 7:17 AM EST
 
   # Adds a "Run workflow" button on the Actions tab for manual runs
   workflow_dispatch:
