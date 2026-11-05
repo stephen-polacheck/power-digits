@@ -49,7 +49,7 @@
         "school_name": "Miami",
         "school_short": "Miami",
         "record": "8-0",
-        "power_digits": 83.3,
+        "power_digits": 83.5,
         "primary_color": "#f47321",
         "secondary_color": "#005030",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/2390.png",
@@ -159,12 +159,12 @@
         "helmet_url": "Oregon.png"
       },
       "home": {
-        "rank": 8,
+        "rank": 9,
         "team_id": 194,
         "school_name": "Ohio State",
         "school_short": "Ohio State",
         "record": "6-2",
-        "power_digits": 75.7,
+        "power_digits": 75.3,
         "primary_color": "#ba0c2f",
         "secondary_color": "#a7b1b7",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/194.png",
@@ -214,7 +214,7 @@
       "g5_game": true,
       "leverage": 47.6,
       "away": {
-        "rank": 62,
+        "rank": 63,
         "team_id": 2005,
         "school_name": "Air Force",
         "school_short": "Air Force",
@@ -227,7 +227,7 @@
         "helmet_url": "Air Force.png"
       },
       "home": {
-        "rank": 72,
+        "rank": 71,
         "team_id": 349,
         "school_name": "Army",
         "school_short": "Army",
