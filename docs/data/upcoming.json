@@ -193,7 +193,7 @@
         "helmet_url": "Kentucky.png"
       },
       "home": {
-        "rank": 23,
+        "rank": 22,
         "team_id": 2633,
         "school_name": "Tennessee",
         "school_short": "Tennessee",
@@ -212,7 +212,7 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": true,
-      "leverage": 47.6,
+      "leverage": 48.1,
       "away": {
         "rank": 63,
         "team_id": 2005,
@@ -227,12 +227,12 @@
         "helmet_url": "Air Force.png"
       },
       "home": {
-        "rank": 71,
+        "rank": 69,
         "team_id": 349,
         "school_name": "Army",
         "school_short": "Army",
         "record": "5-3",
-        "power_digits": 47.6,
+        "power_digits": 48.1,
         "primary_color": "#000000",
         "secondary_color": "#d3bc8d",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/349.png",
@@ -246,14 +246,14 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": true,
-      "leverage": 43.1,
+      "leverage": 42.7,
       "away": {
-        "rank": 81,
+        "rank": 83,
         "team_id": 326,
         "school_name": "Texas State",
         "school_short": "Texas State",
         "record": "4-4",
-        "power_digits": 43.1,
+        "power_digits": 42.7,
         "primary_color": "#501214",
         "secondary_color": "#AC9155",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/326.png",
