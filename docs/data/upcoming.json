@@ -8,14 +8,14 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
-      "leverage": 73.3,
+      "leverage": 73.5,
       "away": {
         "rank": 12,
         "team_id": 252,
         "school_name": "BYU",
         "school_short": "BYU",
         "record": "7-1",
-        "power_digits": 73.3,
+        "power_digits": 73.5,
         "primary_color": "#0047BA",
         "secondary_color": "#ffffff",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/252.png",
@@ -23,7 +23,7 @@
         "helmet_url": "BYU.png"
       },
       "home": {
-        "rank": 3,
+        "rank": 2,
         "team_id": 254,
         "school_name": "Utah",
         "school_short": "Utah",
@@ -117,7 +117,7 @@
         "school_name": "Alabama",
         "school_short": "Alabama",
         "record": "6-2",
-        "power_digits": 76.5,
+        "power_digits": 76.7,
         "primary_color": "#9e1b32",
         "secondary_color": "#ffffff",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/333.png",
@@ -159,12 +159,12 @@
         "helmet_url": "Oregon.png"
       },
       "home": {
-        "rank": 9,
+        "rank": 8,
         "team_id": 194,
         "school_name": "Ohio State",
         "school_short": "Ohio State",
         "record": "6-2",
-        "power_digits": 75.3,
+        "power_digits": 75.7,
         "primary_color": "#ba0c2f",
         "secondary_color": "#a7b1b7",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/194.png",
@@ -193,7 +193,7 @@
         "helmet_url": "Kentucky.png"
       },
       "home": {
-        "rank": 22,
+        "rank": 23,
         "team_id": 2633,
         "school_name": "Tennessee",
         "school_short": "Tennessee",
@@ -212,14 +212,14 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": true,
-      "leverage": 48.1,
+      "leverage": 47.6,
       "away": {
-        "rank": 63,
+        "rank": 64,
         "team_id": 2005,
         "school_name": "Air Force",
         "school_short": "Air Force",
         "record": "6-2",
-        "power_digits": 50.8,
+        "power_digits": 50.5,
         "primary_color": "#003594",
         "secondary_color": "#B2B4B2",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/2005.png",
@@ -227,12 +227,12 @@
         "helmet_url": "Air Force.png"
       },
       "home": {
-        "rank": 69,
+        "rank": 70,
         "team_id": 349,
         "school_name": "Army",
         "school_short": "Army",
         "record": "5-3",
-        "power_digits": 48.1,
+        "power_digits": 47.6,
         "primary_color": "#000000",
         "secondary_color": "#d3bc8d",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/349.png",
@@ -248,7 +248,7 @@
       "g5_game": true,
       "leverage": 42.7,
       "away": {
-        "rank": 83,
+        "rank": 84,
         "team_id": 326,
         "school_name": "Texas State",
         "school_short": "Texas State",
@@ -261,7 +261,7 @@
         "helmet_url": "Texas State.png"
       },
       "home": {
-        "rank": 77,
+        "rank": 75,
         "team_id": 204,
         "school_name": "Oregon State",
         "school_short": "Oregon St",
