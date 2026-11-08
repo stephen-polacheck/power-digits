@@ -3,40 +3,6 @@
   "week": 10,
   "games": [
     {
-      "game_id": 401856856,
-      "start_date": "2026-11-08T02:30:00.000Z",
-      "start_time_tbd": false,
-      "neutral_site": false,
-      "g5_game": false,
-      "leverage": 54.2,
-      "away": {
-        "rank": 54,
-        "team_id": 277,
-        "school_name": "West Virginia",
-        "school_short": "West Virginia",
-        "record": "5-3",
-        "power_digits": 54.2,
-        "primary_color": "#002855",
-        "secondary_color": "#eaaa00",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/277.png",
-        "logo_dark_url": "https://a.espncdn.com/guid/e5ca2c6f-2389-9da3-43cd-995fad2e06c5/logos/primary_logo_on_secondary_color.png",
-        "helmet_url": "West Virginia.png"
-      },
-      "home": {
-        "rank": 16,
-        "team_id": 2641,
-        "school_name": "Texas Tech",
-        "school_short": "Texas Tech",
-        "record": "7-1",
-        "power_digits": 71.5,
-        "primary_color": "#000000",
-        "secondary_color": "#C30020",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/2641.png",
-        "logo_dark_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/texastech.com/images/nextgen_2023/TT_on_black.svg",
-        "helmet_url": "Texas Tech.png"
-      }
-    },
-    {
       "game_id": 401860912,
       "start_date": "2026-11-08T03:30:00.000Z",
       "start_time_tbd": false,
@@ -76,14 +42,14 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": true,
-      "leverage": 40.4,
+      "leverage": 40.8,
       "away": {
-        "rank": 87,
+        "rank": 86,
         "team_id": 2751,
         "school_name": "Wyoming",
         "school_short": "Wyoming",
         "record": "5-3",
-        "power_digits": 40.4,
+        "power_digits": 40.8,
         "primary_color": "#492F24",
         "secondary_color": "#ffc425",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/2751.png",
@@ -91,85 +57,17 @@
         "helmet_url": "Wyoming.png"
       },
       "home": {
-        "rank": 69,
+        "rank": 65,
         "team_id": 2439,
         "school_name": "UNLV",
         "school_short": "UNLV",
         "record": "5-3",
-        "power_digits": 47.7,
+        "power_digits": 48.0,
         "primary_color": "#E31837",
         "secondary_color": "#9FA1A4",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/2439.png",
         "logo_dark_url": "https://b.fssta.com/uploads/application/college/team-logos/UNLV-alternate.vresize.350.350.medium.0.png",
         "helmet_url": "UNLV.png"
-      }
-    },
-    {
-      "game_id": 401860913,
-      "start_date": "2026-11-08T02:30:00.000Z",
-      "start_time_tbd": false,
-      "neutral_site": false,
-      "g5_game": true,
-      "leverage": 32.4,
-      "away": {
-        "rank": 66,
-        "team_id": 278,
-        "school_name": "Fresno State",
-        "school_short": "Fresno St",
-        "record": "5-3",
-        "power_digits": 47.9,
-        "primary_color": "#c41230",
-        "secondary_color": "#13284c",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/278.png",
-        "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/278.png",
-        "helmet_url": "Fresno State.png"
-      },
-      "home": {
-        "rank": 107,
-        "team_id": 328,
-        "school_name": "Utah State",
-        "school_short": "Utah State",
-        "record": "3-5",
-        "power_digits": 32.4,
-        "primary_color": "#0F2439",
-        "secondary_color": "#ffffff",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/328.png",
-        "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/328.png",
-        "helmet_url": "Utah State.png"
-      }
-    },
-    {
-      "game_id": 401864532,
-      "start_date": "2026-11-08T02:30:00.000Z",
-      "start_time_tbd": false,
-      "neutral_site": false,
-      "g5_game": true,
-      "leverage": 16.0,
-      "away": {
-        "rank": 126,
-        "team_id": 62,
-        "school_name": "Hawai'i",
-        "school_short": "Hawai'i",
-        "record": "2-6",
-        "power_digits": 23.3,
-        "primary_color": "#024731",
-        "secondary_color": "#000000",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/62.png",
-        "logo_dark_url": "https://a.espncdn.com/guid/d50009ca-5143-9322-d577-17d7115a6c54/logos/primary_logo_white.png",
-        "helmet_url": "Hawaii.png"
-      },
-      "home": {
-        "rank": 134,
-        "team_id": 2638,
-        "school_name": "UTEP",
-        "school_short": "UTEP",
-        "record": "1-7",
-        "power_digits": 16.0,
-        "primary_color": "#041E42",
-        "secondary_color": "#FF8200",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/2638.png",
-        "logo_dark_url": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2638.png",
-        "helmet_url": "UTEP.png"
       }
     }
   ]
