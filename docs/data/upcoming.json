@@ -38,8 +38,8 @@
     },
     {
       "game_id": 401856885,
-      "start_date": "2026-11-14T05:00:00.000Z",
-      "start_time_tbd": true,
+      "start_date": "2026-11-15T00:30:00.000Z",
+      "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
       "leverage": 68.2,
@@ -106,8 +106,8 @@
     },
     {
       "game_id": 401856887,
-      "start_date": "2026-11-14T05:00:00.000Z",
-      "start_time_tbd": true,
+      "start_date": "2026-11-14T21:15:00.000Z",
+      "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
       "leverage": 65.7,
@@ -174,8 +174,8 @@
     },
     {
       "game_id": 401856864,
-      "start_date": "2026-11-14T05:00:00.000Z",
-      "start_time_tbd": true,
+      "start_date": "2026-11-15T00:30:00.000Z",
+      "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
       "leverage": 63.8,
