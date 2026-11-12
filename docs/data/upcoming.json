@@ -164,7 +164,7 @@
         "school_name": "Miami",
         "school_short": "Miami",
         "record": "8-1",
-        "power_digits": 79.9,
+        "power_digits": 80.1,
         "primary_color": "#f47321",
         "secondary_color": "#005030",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/2390.png",
@@ -227,7 +227,7 @@
         "helmet_url": "North Texas.png"
       },
       "home": {
-        "rank": 44,
+        "rank": 45,
         "team_id": 2636,
         "school_name": "UTSA",
         "school_short": "UTSA",
@@ -266,7 +266,7 @@
         "school_name": "New Mexico",
         "school_short": "New Mexico",
         "record": "8-1",
-        "power_digits": 65.3,
+        "power_digits": 65.7,
         "primary_color": "#BA0C2F",
         "secondary_color": "#A7A8AA",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/167.png",
