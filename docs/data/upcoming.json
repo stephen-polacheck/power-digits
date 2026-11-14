@@ -57,7 +57,7 @@
         "helmet_url": "Texas.png"
       },
       "home": {
-        "rank": 21,
+        "rank": 20,
         "team_id": 99,
         "school_name": "LSU",
         "school_short": "LSU",
@@ -76,9 +76,9 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
-      "leverage": 65.8,
+      "leverage": 66.3,
       "away": {
-        "rank": 13,
+        "rank": 12,
         "team_id": 154,
         "school_name": "Wake Forest",
         "school_short": "Wake Forest",
@@ -91,12 +91,12 @@
         "helmet_url": "Wake Forest.png"
       },
       "home": {
-        "rank": 23,
+        "rank": 22,
         "team_id": 2567,
         "school_name": "SMU",
         "school_short": "SMU",
         "record": "7-2",
-        "power_digits": 65.8,
+        "power_digits": 66.3,
         "primary_color": "#354CA1",
         "secondary_color": "#CC0035",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/2567.png",
@@ -106,7 +106,7 @@
     },
     {
       "game_id": 401856887,
-      "start_date": "2026-11-14T21:15:00.000Z",
+      "start_date": "2026-11-15T18:00:00.000Z",
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
@@ -125,7 +125,7 @@
         "helmet_url": "Ole Miss.png"
       },
       "home": {
-        "rank": 24,
+        "rank": 23,
         "team_id": 201,
         "school_name": "Oklahoma",
         "school_short": "Oklahoma",
@@ -144,14 +144,14 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
-      "leverage": 64.8,
+      "leverage": 64.5,
       "away": {
         "rank": 27,
         "team_id": 150,
         "school_name": "Duke",
         "school_short": "Duke",
         "record": "7-2",
-        "power_digits": 64.8,
+        "power_digits": 64.5,
         "primary_color": "#00539b",
         "secondary_color": "#ffffff",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/150.png",
@@ -164,7 +164,7 @@
         "school_name": "Miami",
         "school_short": "Miami",
         "record": "8-1",
-        "power_digits": 80.1,
+        "power_digits": 79.8,
         "primary_color": "#f47321",
         "secondary_color": "#005030",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/2390.png",
@@ -174,7 +174,7 @@
     },
     {
       "game_id": 401856864,
-      "start_date": "2026-11-15T00:30:00.000Z",
+      "start_date": "2026-11-15T03:30:00.000Z",
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
@@ -185,7 +185,7 @@
         "school_name": "Utah",
         "school_short": "Utah",
         "record": "9-0",
-        "power_digits": 81.2,
+        "power_digits": 81.0,
         "primary_color": "#be0000",
         "secondary_color": "#ffffff",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/254.png",
@@ -193,7 +193,7 @@
         "helmet_url": "Utah.png"
       },
       "home": {
-        "rank": 28,
+        "rank": 29,
         "team_id": 12,
         "school_name": "Arizona",
         "school_short": "Arizona",
@@ -214,7 +214,7 @@
       "g5_game": true,
       "leverage": 58.4,
       "away": {
-        "rank": 42,
+        "rank": 40,
         "team_id": 249,
         "school_name": "North Texas",
         "school_short": "North Texas",
@@ -227,7 +227,7 @@
         "helmet_url": "North Texas.png"
       },
       "home": {
-        "rank": 47,
+        "rank": 46,
         "team_id": 2636,
         "school_name": "UTSA",
         "school_short": "UTSA",
@@ -248,7 +248,7 @@
       "g5_game": true,
       "leverage": 44.4,
       "away": {
-        "rank": 80,
+        "rank": 81,
         "team_id": 2439,
         "school_name": "UNLV",
         "school_short": "UNLV",
@@ -261,7 +261,7 @@
         "helmet_url": "UNLV.png"
       },
       "home": {
-        "rank": 25,
+        "rank": 24,
         "team_id": 167,
         "school_name": "New Mexico",
         "school_short": "New Mexico",
