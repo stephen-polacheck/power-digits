@@ -110,7 +110,7 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
-      "leverage": 61.7,
+      "leverage": 61.4,
       "away": {
         "rank": 5,
         "team_id": 61,
@@ -125,12 +125,12 @@
         "helmet_url": "Georgia.png"
       },
       "home": {
-        "rank": 31,
+        "rank": 33,
         "team_id": 2579,
         "school_name": "South Carolina",
         "school_short": "South Carolina",
         "record": "6-4",
-        "power_digits": 61.7,
+        "power_digits": 61.4,
         "primary_color": "#73000a",
         "secondary_color": "#000000",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/2579.png",
@@ -178,7 +178,7 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
-      "leverage": 58.2,
+      "leverage": 58.4,
       "away": {
         "rank": 1,
         "team_id": 26,
@@ -193,12 +193,12 @@
         "helmet_url": "UCLA.png"
       },
       "home": {
-        "rank": 40,
+        "rank": 39,
         "team_id": 130,
         "school_name": "Michigan",
         "school_short": "Michigan",
         "record": "5-5",
-        "power_digits": 58.2,
+        "power_digits": 58.4,
         "primary_color": "#00274c",
         "secondary_color": "#ffcb05",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/130.png",
@@ -227,7 +227,7 @@
         "helmet_url": "New Mexico.png"
       },
       "home": {
-        "rank": 72,
+        "rank": 73,
         "team_id": 2751,
         "school_name": "Wyoming",
         "school_short": "Wyoming",
