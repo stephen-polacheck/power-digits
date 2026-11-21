@@ -8,14 +8,14 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
-      "leverage": 64.5,
+      "leverage": 64.8,
       "away": {
         "rank": 24,
         "team_id": 99,
         "school_name": "LSU",
         "school_short": "LSU",
         "record": "6-4",
-        "power_digits": 64.5,
+        "power_digits": 64.8,
         "primary_color": "#461d7c",
         "secondary_color": "#fdd023",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/99.png",
@@ -57,12 +57,12 @@
         "helmet_url": "SMU.png"
       },
       "home": {
-        "rank": 7,
+        "rank": 8,
         "team_id": 87,
         "school_name": "Notre Dame",
         "school_short": "Notre Dame",
         "record": "9-1",
-        "power_digits": 77.6,
+        "power_digits": 77.4,
         "primary_color": "#0c2340",
         "secondary_color": "#c99700",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/87.png",
@@ -76,14 +76,14 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
-      "leverage": 63.8,
+      "leverage": 63.7,
       "away": {
         "rank": 17,
         "team_id": 2294,
         "school_name": "Iowa",
         "school_short": "Iowa",
         "record": "8-2",
-        "power_digits": 70.9,
+        "power_digits": 70.7,
         "primary_color": "#000000",
         "secondary_color": "#ffcd00",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/2294.png",
@@ -96,7 +96,7 @@
         "school_name": "Illinois",
         "school_short": "Illinois",
         "record": "6-4",
-        "power_digits": 63.8,
+        "power_digits": 63.7,
         "primary_color": "#13294B",
         "secondary_color": "#FF5F05",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/356.png",
@@ -159,7 +159,7 @@
         "helmet_url": "Kentucky.png"
       },
       "home": {
-        "rank": 38,
+        "rank": 40,
         "team_id": 142,
         "school_name": "Missouri",
         "school_short": "Missouri",
@@ -178,14 +178,14 @@
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": false,
-      "leverage": 58.4,
+      "leverage": 58.2,
       "away": {
         "rank": 1,
         "team_id": 26,
         "school_name": "UCLA",
         "school_short": "UCLA",
         "record": "10-0",
-        "power_digits": 83.1,
+        "power_digits": 83.3,
         "primary_color": "#2774ae",
         "secondary_color": "#f2a900",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/26.png",
@@ -193,51 +193,17 @@
         "helmet_url": "UCLA.png"
       },
       "home": {
-        "rank": 39,
+        "rank": 43,
         "team_id": 130,
         "school_name": "Michigan",
         "school_short": "Michigan",
         "record": "5-5",
-        "power_digits": 58.4,
+        "power_digits": 58.2,
         "primary_color": "#00274c",
         "secondary_color": "#ffcb05",
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/130.png",
         "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/130.png",
         "helmet_url": "Michigan.png"
-      }
-    },
-    {
-      "game_id": 401864542,
-      "start_date": "2026-11-21T02:00:00.000Z",
-      "start_time_tbd": false,
-      "neutral_site": false,
-      "g5_game": true,
-      "leverage": 47.3,
-      "away": {
-        "rank": 45,
-        "team_id": 167,
-        "school_name": "New Mexico",
-        "school_short": "New Mexico",
-        "record": "8-2",
-        "power_digits": 57.6,
-        "primary_color": "#BA0C2F",
-        "secondary_color": "#A7A8AA",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/167.png",
-        "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/167.png",
-        "helmet_url": "New Mexico.png"
-      },
-      "home": {
-        "rank": 73,
-        "team_id": 2751,
-        "school_name": "Wyoming",
-        "school_short": "Wyoming",
-        "record": "7-3",
-        "power_digits": 47.3,
-        "primary_color": "#492F24",
-        "secondary_color": "#ffc425",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/2751.png",
-        "logo_dark_url": "https://a.espncdn.com/guid/da12224c-5cfe-470b-a0c3-a2df7b134a8f/logos/primary_logo_on_primary_color.png",
-        "helmet_url": "Wyoming.png"
       }
     },
     {
@@ -248,7 +214,7 @@
       "g5_game": true,
       "leverage": 42.0,
       "away": {
-        "rank": 30,
+        "rank": 29,
         "team_id": 2636,
         "school_name": "UTSA",
         "school_short": "UTSA",
@@ -272,6 +238,40 @@
         "logo_url": "https://cdn.collegefootballdata.com/logos/500/5.png",
         "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/5.png",
         "helmet_url": "UAB.png"
+      }
+    },
+    {
+      "game_id": 401862831,
+      "start_date": "2026-11-21T17:00:00.000Z",
+      "start_time_tbd": false,
+      "neutral_site": false,
+      "g5_game": true,
+      "leverage": 41.8,
+      "away": {
+        "rank": 91,
+        "team_id": 151,
+        "school_name": "East Carolina",
+        "school_short": "East Carolina",
+        "record": "6-4",
+        "power_digits": 41.8,
+        "primary_color": "#582C83",
+        "secondary_color": "#FFC72C",
+        "logo_url": "https://cdn.collegefootballdata.com/logos/500/151.png",
+        "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/151.png",
+        "helmet_url": "East Carolina.png"
+      },
+      "home": {
+        "rank": 85,
+        "team_id": 349,
+        "school_name": "Army",
+        "school_short": "Army",
+        "record": "5-4",
+        "power_digits": 43.9,
+        "primary_color": "#000000",
+        "secondary_color": "#d3bc8d",
+        "logo_url": "https://cdn.collegefootballdata.com/logos/500/349.png",
+        "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/349.png",
+        "helmet_url": "Army.png"
       }
     }
   ]
