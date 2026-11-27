@@ -241,37 +241,37 @@
       }
     },
     {
-      "game_id": 401866473,
-      "start_date": "2026-11-27T17:00:00.000Z",
+      "game_id": 401869954,
+      "start_date": "2026-11-28T17:00:00.000Z",
       "start_time_tbd": false,
       "neutral_site": false,
       "g5_game": true,
-      "leverage": 48.2,
+      "leverage": 48.1,
       "away": {
-        "rank": 51,
-        "team_id": 2649,
-        "school_name": "Toledo",
-        "school_short": "Toledo",
+        "rank": 39,
+        "team_id": 2348,
+        "school_name": "Louisiana Tech",
+        "school_short": "LA Tech",
         "record": "9-2",
-        "power_digits": 54.9,
-        "primary_color": "#003E7E",
-        "secondary_color": "#FFD200",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/2649.png",
-        "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/2649.png",
-        "helmet_url": "Toledo.png"
+        "power_digits": 60.7,
+        "primary_color": "#003087",
+        "secondary_color": "#cb333b",
+        "logo_url": "https://cdn.collegefootballdata.com/logos/500/2348.png",
+        "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/2348.png",
+        "helmet_url": "Louisiana Tech.png"
       },
       "home": {
-        "rank": 71,
-        "team_id": 195,
-        "school_name": "Ohio",
-        "school_short": "Ohio",
-        "record": "8-3",
-        "power_digits": 48.2,
-        "primary_color": "#024230",
+        "rank": 72,
+        "team_id": 290,
+        "school_name": "Georgia Southern",
+        "school_short": "GA Southern",
+        "record": "7-4",
+        "power_digits": 48.1,
+        "primary_color": "#041e42",
         "secondary_color": "#ffffff",
-        "logo_url": "https://cdn.collegefootballdata.com/logos/500/195.png",
-        "logo_dark_url": "https://a.espncdn.com/guid/eb84d343-74ae-03e0-bff8-6c19b5b917e6/logos/secondary_logo_white.png",
-        "helmet_url": "Ohio.png"
+        "logo_url": "https://cdn.collegefootballdata.com/logos/500/290.png",
+        "logo_dark_url": "https://cdn.collegefootballdata.com/logos-dark/500/290.png",
+        "helmet_url": "Georgia Southern.png"
       }
     }
   ]
